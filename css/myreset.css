@@ -1,0 +1,30 @@
+
+#header-white{
+
+
+}
+
+#header-white ul{
+	margin-right: -50px;
+	padding-left: 550px;
+	font-size: 45px;
+}
+
+#name{
+	font-size: 50px;
+}
+
+#about{
+	margin-left: 300px;
+
+	width: 80%;
+	text-align: right;
+}
+
+.sub-titile{
+	margin-right: 0px;
+}
+
+#portfolio-content{
+	position: absolute;
+}
