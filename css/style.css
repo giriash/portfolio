@@ -378,20 +378,68 @@ CONTENT
 .content .text-intro h1{
   font-size:43px;
   width:40%;
-  text-transform:uppercase;
   color:#000000;
   font-weight:900;
   line-height:70px;
+}
+
+/*my reset for h2 & h3*/
+
+.content .text-intro h2{
+  text-transform: uppercase;
+  padding-left: 8px;
+  font-size:23px;
+  width:80%;
+  color:#000000;
+  font-weight:900;
+  line-height:20px;
 }
 
 .content .text-intro p{
   font-size:13px;
   color:#8d8d8d;
   margin-top:30px;
+  padding-left: 8px;
   font-weight:400;
   line-height:22px;
   letter-spacing:1px;
   width:40%;
+}
+.content .text-intro .subtitle{
+  text-align: left;
+}
+
+.content .text-intro h3{
+  font-size:33px;
+  text-transform: uppercase;
+  /*width:40%;*/
+  font-weight:900;
+  line-height:70px;
+}
+
+.content .text-intro img{
+  text-align: center;
+  padding-left: 10%;
+}
+
+.content .text-intro .subtitle h4{
+  font-size:23px;
+  text-transform: uppercase;
+  width:40%;
+  font-weight:900;
+  line-height:70px;
+}
+
+.content .text-intro .subtitle p{
+  font-size:13px;
+  color:#8d8d8d;
+  margin-top:-20px;
+  
+  font-weight:400;
+  line-height:15px;
+  letter-spacing:1px;
+  width:100%;
+  text-align: left;
 }
 
         .typed-cursor{
@@ -512,7 +560,9 @@ li.grid-item{
   width:360px;
   position:relative;
   float:left;
-  padding:15px;
+  padding-left:15px;
+  padding-right: 15px;
+  padding-bottom: 15px;
 }
 
 .grid-hover{
@@ -523,38 +573,38 @@ li.grid-item{
   background: white;
   z-index: 2;
   opacity: 0;
-  -webkit-transition: all 0.2s ease-in;
-	-moz-transition: all 0.2s ease-in;
-	-ms-transition: all 0.2s ease-in;
-	-o-transition: all 0.2s ease-in;
-	transition: all 0.2s ease-in; 
+  -webkit-transition: all 0.1s ease-in;
+	-moz-transition: all 0.1s ease-in;
+	-ms-transition: all 0.1s ease-in;
+	-o-transition: all 0.1s ease-in;
+	transition: all 0.1s ease-in; 
 }
 
 .grid-hover:hover{
-  opacity: 0.9;
+  opacity: 0.85;
 }
 
-.grid-hover h1{
-  font-size:23px;
+.grid-hover h2{
+  font-size:18px;
   bottom:80px;
-  left:40px;
+  left:30px;
   position:absolute;
   text-transform:uppercase;
   color:#000000;
   letter-spacing:1px;
-  font-weight:900;
-  line-height:50px;
+  font-weight:700;
+  line-height:30px;
 }
 
 .grid-hover p{
   font-size:13px;
   bottom:40px;
-  left:40px;
+  left:30px;
   position:absolute;
   color:#686868;
   letter-spacing:1px;
   font-weight:400;
-  line-height:50px;
+  line-height:30px;
 }
 
 li.grid-item img{
