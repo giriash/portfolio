@@ -425,9 +425,20 @@ CONTENT
 .content .text-intro .subtitle h4{
   font-size:23px;
   text-transform: uppercase;
-  width:40%;
+  /*width:40%;*/
   font-weight:900;
   line-height:70px;
+  
+}
+
+.content .text-intro .subtitle h5{
+  font-size:13px;
+  text-transform: uppercase;
+  color: #000000;
+  font-weight:700;
+  line-height:70px;
+  letter-spacing:1px;
+  margin-bottom:-20px;
 }
 
 .content .text-intro .subtitle p{
