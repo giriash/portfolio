@@ -1,4 +1,4 @@
 # portfolio
 personal website
 
-[link](portfolio/index.html)
+[link](index.html)
