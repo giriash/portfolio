@@ -1,0 +1,1560 @@
+<!DOCTYPE html>
+<head>
+    <title>Welcome to Ithaca!</title>
+    <link href="favicon.ico" mce_href="favicon.ico" rel="bookmark" type="image/x-icon" />
+    <link href="favicon.ico" mce_href="favicon.ico" rel="icon" type="image/x-icon" />
+    <link href="favicon.ico" mce_href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <link href="/normalize.com" rel="stylesheet"/>
+    <link href="http://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css"/>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"/>
+    </script>
+
+    <style>
+    div.footer {
+        background: rgba(203,203,108,.6);
+        height: 120px;
+        border-radius: 12px;
+        margin-right: 15px;
+    }
+    body {
+        font-family: helvetico, sans-serif;
+        background: white;
+        font-size: 17px;
+    }
+    #obj{
+        background-image: url("http://i.imgur.com/CEpJzag.jpg"); 
+        height:565px; 
+        width:100%; 
+        border:0; 
+        border-radius:0; 
+        background-size: cover;
+    }
+    table.head {
+        margin-left: 10px;
+        margin-top: 10px;
+        background-color: rgba(0,0,0,.2);
+    }
+    img.head {
+        height: 100px;
+    }
+    h1 {
+        margin: 0 auto;
+        padding-bottom: -20px;
+    }
+    li {
+        display: inline;
+        font-size: 21px;
+        font-family: helvetico, sans-serif;
+    }
+    ul.bar {
+        margin: 4px 0 0 0;
+        background: rgba(203,203,108,.6);
+        line-height: 60px;
+    }
+    ul.bar  li {
+        color:green;
+        position: relative;
+    }
+    ul.bar  li:hover {
+        color:#33a1c9; 
+        cursor:pointer;
+    }
+    a.footer {
+        font-size: 16px;
+        text-decoration: underline;
+    }
+    td.visitcenter {
+        background-color: rgba(203,203,108,1);
+    }
+    a.footer {
+        font-size: 17px;
+        text-decoration: underline;
+    }
+    h3 {
+        text-align: center;
+        color: green;
+    }
+    td.visitcenter {
+        background-color: rgba(203,203,108,1);
+    }
+    li.footer {
+        display: inline;
+        padding: 0 12px 0 12px;
+        color: green;
+        text-decoration: underline;
+        margin: 0 auto;
+        font-size: 17px;
+    }
+    li.footer:hover {
+        color: #33A1c9;
+        cursor: pointer;
+    }
+    p.footer {
+        margin-top: 8px;
+        line-height: 22px;
+        text-align: center;
+    }
+    div.contact {
+        width: 160px; height: 47px; border-radius: 8px; position:fixed; right: 20px;  bottom: 5px; margin-bottom:0; border: 0; cursor: pointer;}
+    p.contact {
+        font-size:19px; color: white; text-align: center; background-color: rgba(57,102,57,.9); margin-bottom: 5px;
+    }
+    small.contact {
+        opacity: 0;
+    }
+    .show-description p.contact {
+        height: 180px; 
+        width: 240px;
+        position: fixed; 
+        bottom: 5px;
+        right: 20px;
+        background: white;
+        color: green;
+        line-height: 18px;
+        border-radius: 8px;
+        border: 2px solid rgba(57,102,57,.9);
+    }
+    .show-description small.contact {
+        opacity: 1;
+        color: black; font-size:16px;
+    }
+    .show-description input[type="Information"] {
+        float: center;
+        font-size: 16px;
+    }
+    #home_page{border:0; width:100%; height:100%; position:absolute;}
+    #activities_page{border:0; width:100%; height:100%;display:none; position:absolute;}
+    #accommodation_page{border:0; width:100%; height:100%;display:none; position:absolute;}
+    #trip_plan_page{border:0; width:100%; height:100%;display:none; position:absolute;}
+    #visitor_center_page{border:0; width:100%; height:100%;display:none; position:absolute;}
+ 
+    table.homepage {
+        background: rgba(203,203,108,.2);
+        margin-top: 50px;
+        border-radius: 10px;
+    }
+    h2 {
+        text-align: center;
+        color: green;
+        font-size: 22px;
+        padding: 0 30px 0 0;
+    }  
+    p.homepage {
+        line-height: 24px;
+        border-radius: 10px;
+        padding: 20px 20px 20px 20px;
+    }
+    img.thing {
+        width: 300px;
+        height: 200px;
+        margin: 0 auto;
+        border-radius: 10px 10px 0 0;
+    }
+    p.thingtitle {
+        color: green;
+        font-size: 22px;
+    }
+    p.thing {
+        background: rgba(203,203,108,.2);
+        margin: 0 auto;
+        text-align: center;
+        line-height: 24px;
+        border-radius: 0 0 10px 10px;
+    }
+    ul.content {
+        background: rgba(203,203,108,.5);
+        margin: 0 auto;
+        text-align: center;
+        line-height: 
+    }
+    li.content {
+        text-decoration: underline;
+        color: green;
+        padding-right: 40px;
+    }
+    li.content:hover {
+        color: #33A1c9;
+        cursor: pointer;
+    }
+    table {
+        margin: 0 auto;
+    }
+
+    p.select {
+        text-align: center;
+        color: green;
+        font-size: 22px;
+        background: rgba(203,203,108,.3);
+    }
+    div.select1 {
+        height: 180px;
+        width: 240px;
+        background-image: url("http://i.imgur.com/P26p1rw.jpg");
+        background-size: cover;
+        position: relative;   
+        border-radius: 10px;
+    }
+    div.select2 {
+        height: 180px;
+        width: 240px;
+        background-image: url("http://i.imgur.com/IslQnvg.jpg");
+        background-size: cover;
+        position: relative;
+        border-radius: 10px;
+    }
+    div.select3 {
+        height: 180px;
+        width: 240px;
+        background-image: url("http://i.imgur.com/7sqFdxv.jpg");
+        background-size: cover;
+        position: relative; 
+        border-radius: 10px;
+    }
+    div.select4 {
+        height: 180px;
+        width: 240px;
+        background-image: url("http://i.imgur.com/QjArl3W.jpg");
+        background-size: cover;
+        position: relative;
+        border-radius: 10px;
+    }
+    div.select5 {
+        height: 180px;
+        width: 240px;
+        background-image: url("http://i.imgur.com/rYchCdA.jpg");
+        background-size: cover;
+        position: relative;
+        border-radius: 10px;
+    }
+    div.select6 {
+        height: 180px;
+        width: 240px;
+        background-image: url("http://i.imgur.com/MJ1zRYr.jpg");
+        background-size: cover;
+        position: relative;
+        border-radius: 10px;
+    }
+    div.select7 {
+        height: 180px;
+        width: 240px;
+        background-image: url("http://i.imgur.com/3hsRhJI.jpg");
+        background-size: cover;
+        position: relative;
+        border-radius: 10px;
+    }
+    div.select8 {
+        height: 180px;
+        width: 240px;
+        background-image: url("http://i.imgur.com/c6LAVIU.jpg");
+        background-size: cover;
+        position: relative;
+        border-radius: 10px;
+    }
+    div.select9 {
+        height: 180px;
+        width: 240px;
+        background-image: url("http://i.imgur.com/fqmcc0e.jpg");
+        background-size: cover;
+        position: relative;
+        border-radius: 10px;
+    }
+    ul.select {
+        text-align: center;
+        margin: 0 auto;
+        width: 100%;
+        position: absolute;
+        bottom: 75px;
+        padding: 6px 0 6px 0;
+        background: rgba(92,102,22,.6);
+        font-size: 22px;
+    }
+    a.select {
+        color: white;
+        text-decoration: none;
+    }
+    a.select:hover {
+        color: #cc9966;
+    }    
+    ul.upcoming {
+        text-align: center;
+        color: green;
+        font-size: 22px;
+    }
+    a.upcoming {
+        color: green;
+        text-decoration: none;
+    }
+    a.upcoming:hover {
+        color: #33A1c9;
+    }
+    img.upevents {
+        width: 80%;
+        border-radius: 8px;
+        margin: 10px 10px 0 30px;
+    }
+    a.upevents {
+        color: green;
+        font-size: 17px;
+    }
+    a.upevents:hover {
+        color: #33A1c9;
+    }
+    p.upevents {
+        line-height: 24px;
+        text-align: left;
+        padding: 0 5px 0 25px;
+    }
+    td.sidebar {
+        background-color: rgba(203,203,108,.2);
+        border-radius: 12px;
+        padding-top: 50px;
+    }
+    li.brochure {
+        background: rgba(58,102,22,.7);
+        line-height: 30px;
+        border-radius: 7px;
+        padding: 7px;
+        margin-left: 22px;
+    }
+    a.brochure {
+        color: white;
+        text-decoration: none;
+    }
+
+    p.tripplan {
+        color: green;
+        font-size: 20px;
+    }
+    p.trip {
+        line-height: 24px;
+    }
+    td.ptripplan {
+        background: rgba(203,203,108,.3);
+    }
+    td.tripplan {
+        background: rgba(203,203,108,.3);
+        border-radius: 10px;
+        color: green;
+        font-size: 22px;
+    }
+    a.tripplan {
+        color: green;
+        text-decoration: underline;
+    }
+    a.tripplan:hover {
+        color: #33A1c9;
+    }
+    img.tripplan {
+        height: 180px;
+        width: 240px;
+        border-radius: 8px;
+    }
+    ul.tripplan {
+        background-color: white;  
+        text-align: left;
+    }
+    li.tripplan {
+        font-size: 20px;
+    }
+    li.tripplan:hover {
+        cursor: pointer;
+        color: #33A1c9;
+    }
+    hr.trip {
+        border-color: rgba(57,102,57,.5);
+    }
+    a.transport {
+        color: green;
+        text-decoration: none;
+    }
+    a.transport:hover {
+        color: #33A1c9;
+        cursor: pointer;
+    }
+    td.transport {
+        background-color: rgba(203,203,108,.6);
+        height: 30px;
+        padding-left:10px;
+    }
+
+    p.vaddress {
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    a.vinfo {
+        color: green;
+        text-decoration: none;
+        line-height: 24px;
+        padding-left: 30px;
+    }
+    a.vinfo:hover {
+        color: #33A1c9;
+    }
+    a.vaddress {
+        color: green;
+        text-decoration: underline;
+    }
+    a.vaddress:hover {
+        color: #33A1c9;
+    }
+    p.staff {
+        color: green;
+        margin-bottom: 5px;
+    }
+    a.staff {
+        color: green;
+        margin: 0 auto;
+        text-decoration: underline;
+    }
+    a.staff:hover {
+        color: #33A1c9;
+    }
+    p.vtitle {
+        font-size: 20px;
+        text-align: left;
+        color: green;
+    }
+    table.vcenter {
+        margin-top: 50px;
+        margin-bottom: 10px;
+    }
+    a.vcenter {
+        color: green;
+        font-size: 20px;
+        text-decoration: none;
+    }
+    a.vcenter:hover {
+        color: #33A1c9;
+    }
+    #vinfo1 {
+        width: 270px;
+        height: 180px;
+        background-image: url("http://i.imgur.com/IVqA07V.jpg");
+        background-size: cover;
+        border-radius: 8px;
+        margin-bottom: 10px;
+    }
+    #vinfo2 {
+        width: 270px;
+        height: 180px;
+        background-image: url("http://i.imgur.com/HgmdBfw.jpg");
+        background-size: cover;
+        border-radius: 8px;
+        margin-bottom: 10px;
+    }
+    #vinfo3 {
+        width: 270px;
+        height: 180px;
+        background-image: url("http://i.imgur.com/tshBvhY.jpg");
+        background-size: cover;
+        border-radius: 8px;
+        margin-bottom: 10px;
+    }
+    p.hide {
+        color: black;
+        background: rgba(255,255,255,.8);
+        line-height: 24px;
+        opacity: 0;
+        border-radius: 8px;
+        height: 180px;
+    }
+    .show-description p.hide {
+        opacity: 1;
+    }
+    p.vtitle {
+        color: green;
+        font-size: 20px;
+        text-align: center;
+    }
+    td.request {
+        background-color: rgba(181,102,22,.7);
+        height: 30px;
+        padding-left:10px;
+    }
+    a.request {
+        color: white;
+        text-decoration: none;
+        font-size: 19px;
+    }
+    a.request:hover {
+        color: green;
+    }
+    td.staff {
+        text-align: center;
+    }
+    </style>
+</head>
+
+<body>
+    <header id="header1">
+        <div id="obj">
+            <table class="head" align="left">
+                <tr>
+                    <td>
+                        <img class="head" src="http://i.imgur.com/NBEhIqA.gif"/>
+                    </td>
+                </tr>
+            </table>
+            <script language =javascript >
+                var curIndex=0;
+                var timeInterval=4*1000;
+                var arr=new Array();
+                arr[0]="http://i.imgur.com/CEpJzag.jpg";
+                arr[1]="http://i.imgur.com/GEELtcu.jpg";
+                arr[2]="http://i.imgur.com/65eyY9E.png";
+                setInterval(changeImg,timeInterval);
+                function changeImg()
+                {
+                    var obj=document.getElementById("obj");
+                    if (curIndex==arr.length-1)
+                        {
+                            curIndex=0;
+                        }
+                    else
+                        {
+                            curIndex+=1;
+                        } 
+                    obj.style.backgroundImage="url("+arr[curIndex]+")";
+                }
+            </script>
+        </div>
+
+        <ul class="bar">
+            <table align="center" rules="cols" frame="void" border="4" bordercolor="white" cols="5" cellspacing="5">
+                <tr>
+                    <td width="160" align="center">
+                        <li id="home" class="title">Home</li>
+                    </td>
+                    <td width="160" align="center">
+                        <li id="activities" class="title">Things to Do</li>
+                    </td>
+                    <td width="160" align="center">
+                        <li id="accommodation"class="title">Places to Stay</li>
+                    </td>
+                    <td width="160" align="center">
+                        <li id="trip_plan" class="title">Plan Your Trip</li>
+                    </td>
+                    <td class="visitcenter" width="160" align="center">
+                        <li id="visitor_center" class="title">Visitor Center</li>
+                    </td>
+                </tr>
+            </table>
+        </ul>
+    </header>    
+
+    <script type="text/javascript"> 
+    ele = document.getElementById("home");
+    ele.onclick = function() {
+        ele = document.getElementById("home_page");
+        ele.style.display = "block";
+        ele = document.getElementById("activities_page");
+        ele.style.display = "none";
+        ele = document.getElementById("accommodation_page");
+        ele.style.display = "none";
+        ele = document.getElementById("trip_plan_page");
+        ele.style.display = "none";
+        ele = document.getElementById("visitor_center_page");
+        ele.style.display = "none";
+    }   
+    ele = document.getElementById("activities");
+    ele.onclick = function() {
+        ele = document.getElementById("home_page");
+        ele.style.display = "none";
+        ele = document.getElementById("activities_page");
+        ele.style.display = "block";
+        ele = document.getElementById("accommodation_page");
+        ele.style.display = "none";
+        ele = document.getElementById("trip_plan_page");
+        ele.style.display = "none";
+        ele = document.getElementById("visitor_center_page");
+        ele.style.display = "none";
+    }    
+    ele = document.getElementById("accommodation");
+    ele.onclick = function() {
+        ele = document.getElementById("home_page");
+        ele.style.display = "none";
+        ele = document.getElementById("activities_page");
+        ele.style.display = "none";
+        ele = document.getElementById("accommodation_page");
+        ele.style.display = "block";
+        ele = document.getElementById("trip_plan_page");
+        ele.style.display = "none";
+        ele = document.getElementById("visitor_center_page");
+        ele.style.display = "none";
+    }   
+    ele = document.getElementById("trip_plan");
+    ele.onclick = function() {
+        ele = document.getElementById("home_page");
+        ele.style.display = "none";
+        ele = document.getElementById("activities_page");
+        ele.style.display = "none";
+        ele = document.getElementById("accommodation_page");
+        ele.style.display = "none";
+        ele = document.getElementById("trip_plan_page");
+        ele.style.display = "block";
+        ele = document.getElementById("visitor_center_page");
+        ele.style.display = "none";
+    }   
+    ele = document.getElementById("visitor_center");
+    ele.onclick = function() {
+        ele = document.getElementById("home_page");
+        ele.style.display = "none";
+        ele = document.getElementById("activities_page");
+        ele.style.display = "none";
+        ele = document.getElementById("accommodation_page");
+        ele.style.display = "none";
+        ele = document.getElementById("trip_plan_page");
+        ele.style.display = "none";
+        ele = document.getElementById("visitor_center_page");
+        ele.style.display = "block";
+    }
+    </script>
+    
+    <!--Homepage Page-->
+    <div id="home_page">
+        <table cellspacing="0">
+            <tr>
+                <table class="homepage" cellspacing="30" align="center">
+                    <tr>
+                        <td>
+                            <embed src="https://www.youtube.com/v/No9dT0SlxLg%26fs=1%26rel=0%26autoplay=1%26hd=1" type="application/x-shockwave-flash" width="auto" height="220" allowfullScreen="true" wmode="opaque" allowscriptaccess="always"></embed>
+                        <td>
+                        <td width="600">
+                            <h2>Fresh Experience in Ithaca, NY</h2>
+                            <p class="homepage">In our corner of the Finger Lakes Region of New York, we've become a destination known for cultural events, activities and outstanding outdoor recreation. Our population is infused with the constant energy of youth from the bright students and faculty of Ithaca College and Cornell University, making it a unique and dynamic vacation destination that is charming, intelligent and varied. Ithaca is more of an oasis than a destination, more discovery than itinerary. Enjoy your trip!
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+                </tr>
+                <tr>
+                <table cellspacing="50" align="center" col="3">
+                    <tr>
+                        <td width="300">
+                            <img class="thing" src="http://i.imgur.com/fE4HjwG.jpg"/>
+                            <ul class="content">
+                                <li id="content_activities" class="content">Things to Do</li>
+                            </ul>
+                            <p class="thing">What you'll discover in Ithaca could be something fleeting, like a rainbow in the mist of one of Ithaca's many waterfalls. Or maybe something powerful, like insight from an acclaimed speaker on campus at Cornell University. It could taste sweet, like the fresh honey at the Ithaca Farmers Market. Ithaca's featured attractions will keep you busy in our Finger Lakes town. Bring all your senses. And your camera.
+                            </p>
+                        </td>
+                        <td width="300">
+                            <img class="thing" src="http://i.imgur.com/clD7dwU.jpg"/>
+                            <ul class="content">
+                                <li id="content_accommodation" class="content">Places to Stay</li>
+                            </ul>
+                            <p class="thing">There's a bumper sticker here that says Ithaca, NY is 10 square miles surrounded by reality. It's mostly true, and it nicely describes the atmosphere you'll find once you settle into one of our comfortable Ithaca hotels. Whether you fancy a stay at a homey B&amp;B, sophisticated small inn, or full-service luxury resort, you'll soon discover that our lodging accommodations specialize in relaxation.
+                            </p>
+                        </td>
+                        <td width="300">
+                            <img class="thing" src="http://i.imgur.com/5drcNbI.jpg"/>
+                            <ul class="content">
+                                <li id="content_trip_plan" class="content">Plan Your Trip</li>
+                            </ul>
+                            <p class="thing">Ithaca has so many attractions, activities, restaurants that you can experience. Plan your own Ithaca trip now by using the 'Build Your Trip' tool to search information and schedule your trip. Or click to see the classic routes of Ithaca and routes particularly made for your type as well as group tour information. Download brochures and get transportation information before you come.
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </table>
+    <script type="text/javascript">
+    ele = document.getElementById("content_activities");
+    ele.onclick = function() {
+        ele = document.getElementById("home_page");
+        ele.style.display = "none";
+        ele = document.getElementById("activities_page");
+        ele.style.display = "block";
+        ele = document.getElementById("accommodation_page");
+        ele.style.display = "none";
+        ele = document.getElementById("trip_plan_page");
+        ele.style.display = "none";
+        ele = document.getElementById("visitor_center_page");
+        ele.style.display = "none";
+    }    
+    ele = document.getElementById("content_accommodation");
+    ele.onclick = function() {
+        ele = document.getElementById("home_page");
+        ele.style.display = "none";
+        ele = document.getElementById("activities_page");
+        ele.style.display = "none";
+        ele = document.getElementById("accommodation_page");
+        ele.style.display = "block";
+        ele = document.getElementById("trip_plan_page");
+        ele.style.display = "none";
+        ele = document.getElementById("visitor_center_page");
+        ele.style.display = "none";
+    }   
+    ele = document.getElementById("content_trip_plan");
+    ele.onclick = function() {
+        ele = document.getElementById("home_page");
+        ele.style.display = "none";
+        ele = document.getElementById("activities_page");
+        ele.style.display = "none";
+        ele = document.getElementById("accommodation_page");
+        ele.style.display = "none";
+        ele = document.getElementById("trip_plan_page");
+        ele.style.display = "block";
+        ele = document.getElementById("visitor_center_page");
+        ele.style.display = "none";
+    }   
+    </script>
+        <div class="footer">
+            <table>
+                <tr>
+                    <td>
+                        <li id="footer_home" class="footer">Home</li>  
+                    </td>
+                    <td>                
+                        <li id="footer_activities" class="footer">Things to Do</li>
+                    </td>
+                    <td>
+                        <li id="footer_accommodation" class="footer">Places to Stay</li>
+                    </td>
+                    <td>
+                        <li id="footer_trip_plan" class="footer">Plan Your Trip</li>
+                    </td>
+                    <td>
+                        <li id="footer_visitor_center" class="footer">Visitor Center</li>
+                    </td>
+                </tr>
+            </table>
+            <p class="footer">
+                Ithaca/Tompkins County Convention &amp; Visitors Bureau<br/>
+                904 East Shore Drive, Ithaca, NY 14850<br/>
+                Phone: (607) 272-1313 | Toll Free: (800)-28-ITHACA    
+            </p>
+        </div>
+    </div>  
+    <script type="text/javascript">
+    ele = document.getElementById("footer_home");
+    ele.onclick = function() {
+        ele = document.getElementById("home_page");
+        ele.style.display = "block";
+        ele = document.getElementById("activities_page");
+        ele.style.display = "none";
+        ele = document.getElementById("accommodation_page");
+        ele.style.display = "none";
+        ele = document.getElementById("trip_plan_page");
+        ele.style.display = "none";
+        ele = document.getElementById("visitor_center_page");
+        ele.style.display = "none";
+    }   
+    ele = document.getElementById("footer_activities");
+    ele.onclick = function() {
+        ele = document.getElementById("home_page");
+        ele.style.display = "none";
+        ele = document.getElementById("activities_page");
+        ele.style.display = "block";
+        ele = document.getElementById("accommodation_page");
+        ele.style.display = "none";
+        ele = document.getElementById("trip_plan_page");
+        ele.style.display = "none";
+        ele = document.getElementById("visitor_center_page");
+        ele.style.display = "none";
+    }    
+    ele = document.getElementById("footer_accommodation");
+    ele.onclick = function() {
+        ele = document.getElementById("home_page");
+        ele.style.display = "none";
+        ele = document.getElementById("activities_page");
+        ele.style.display = "none";
+        ele = document.getElementById("accommodation_page");
+        ele.style.display = "block";
+        ele = document.getElementById("trip_plan_page");
+        ele.style.display = "none";
+        ele = document.getElementById("visitor_center_page");
+        ele.style.display = "none";
+    }   
+    ele = document.getElementById("footer_trip_plan");
+    ele.onclick = function() {
+        ele = document.getElementById("home_page");
+        ele.style.display = "none";
+        ele = document.getElementById("activities_page");
+        ele.style.display = "none";
+        ele = document.getElementById("accommodation_page");
+        ele.style.display = "none";
+        ele = document.getElementById("trip_plan_page");
+        ele.style.display = "block";
+        ele = document.getElementById("visitor_center_page");
+        ele.style.display = "none";
+    }   
+    ele = document.getElementById("footer_visitor_center");
+    ele.onclick = function() {
+        ele = document.getElementById("home_page");
+        ele.style.display = "none";
+        ele = document.getElementById("activities_page");
+        ele.style.display = "none";
+        ele = document.getElementById("accommodation_page");
+        ele.style.display = "none";
+        ele = document.getElementById("trip_plan_page");
+        ele.style.display = "none";
+        ele = document.getElementById("visitor_center_page");
+        ele.style.display = "block";
+    }
+    </script>
+    
+    <!--Activity Page-->
+    <div id="activities_page">
+        <table cellspacing="10">
+            <tr>
+                <td> 
+                    <table cellspacing="40" align="center">
+                        <tr>
+                            <th colspan="3" font-color="green">
+                                <p class="select">Select an Ithaca Activity or Attraction</p>
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="select1">
+                                    <ul class="select">
+                                        <li class="select">
+                                            <a class="select" href="#">Colleges &amp; Universities</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="select2">
+                                    <ul class="select">
+                                        <li class="select">
+                                            <a class="select" href="Waterfalls.html">Waterfalls &amp; Gorges</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="select3">
+                                    <ul class="select">
+                                        <li class="select">
+                                            <a class="select" href="#">Wine Tours</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </td>    
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="select4">
+                                    <ul class="select">
+                                        <li class="select">
+                                            <a class="select" href="#">Cayuga Lake</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="select5">
+                                    <ul class="select">
+                                        <li class="select">
+                                            <a class="select" href="#">Farmers Market</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="select6">
+                                    <ul class="select">
+                                        <li class="select">
+                                            <a class="select" href="#">Local Arts &amp; Theatres</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <div class="select7">
+                                    <ul class="select">
+                                        <li class="select">
+                                            <a class="select" href="#">Dining</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="select8">
+                                    <ul class="select">
+                                        <li class="select">
+                                            <a class="select" href="#">Shopping</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="select9">
+                                    <ul class="select">
+                                        <li class="select">
+                                            <a class="select" href="#">Featured Events</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+                <td class="sidebar" valign="top" width="290">
+                    <ul>
+                        <li><a class="upcoming" href="#">Upcoming Events</a></li>
+                    </ul>
+                    <ul>
+                        <li><a class="upevents" href="http://www.downtownithaca.com/ithaca-events/Winter%20Restaurant%20Week">Ithaca Restaurant Week</a></li>
+                    </ul>
+                    <img class="upevents" src="http://i.imgur.com/GYb4VGT.jpg"/>
+                    <p class="upevents"><span style="color:green; font-weight:bold;">Date:</span> Dec 6 - Dec 14, 2014<br/><span style="color:green; font-weight:bold;">Location:</span> Ithaca Downtown<br/>Join us for Ithaca Restaurant Week, Winter Edition; a week of great food at moderate prices showcasing Ithaca as a dining destination.
+                    </p>
+                    <table width="290">
+                        <tr>
+                            <td colspan="2">
+                                <li class="brochure"><a class="brochure" href="http://visitithaca.uberflip.com/i/254698">View Brochure</a>
+                                </li>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <p class="upevents">A small, portable guide full of must-see waterfalls, can't miss activities, and stories about Ithaca and Tompkins County.</p>
+                            </td>
+                            <td>
+                                <a href="http://visitithaca.uberflip.com/i/254698"><img width="150" src="http://i.imgur.com/Lf1ADmf.jpg"/></a>
+                            </td>
+                        </tr>
+                    </table>                   
+                </td>
+            </tr>
+        </table>
+
+        <div class="footer">
+            <table>
+                <tr>
+                    <td>
+                        <li id="thfooter_home" class="footer">Home</li>  
+                    </td>
+                    <td>                
+                        <li id="thfooter_activities" class="footer">Things to Do</li>
+                    </td>
+                    <td>
+                        <li id="thfooter_accommodation" class="footer">Places to Stay</li>
+                    </td>
+                    <td>
+                        <li id="thfooter_trip_plan" class="footer">Plan Your Trip</li>
+                    </td>
+                    <td>
+                        <li id="thfooter_visitor_center" class="footer">Visitor Center</li>
+                    </td>
+                </tr>
+            </table>
+            <p class="footer">
+                Ithaca/Tompkins County Convention &amp; Visitors Bureau<br/>
+                904 East Shore Drive, Ithaca, NY 14850<br/>
+                Phone: (607) 272-1313 | Toll Free: (800)-28-ITHACA    
+            </p>
+        </div>
+    </div>  
+    <script type="text/javascript">
+    ele = document.getElementById("thfooter_home");
+    ele.onclick = function() {
+        ele = document.getElementById("home_page");
+        ele.style.display = "block";
+        ele = document.getElementById("activities_page");
+        ele.style.display = "none";
+        ele = document.getElementById("accommodation_page");
+        ele.style.display = "none";
+        ele = document.getElementById("trip_plan_page");
+        ele.style.display = "none";
+        ele = document.getElementById("visitor_center_page");
+        ele.style.display = "none";
+    }   
+    ele = document.getElementById("thfooter_activities");
+    ele.onclick = function() {
+        ele = document.getElementById("home_page");
+        ele.style.display = "none";
+        ele = document.getElementById("activities_page");
+        ele.style.display = "block";
+        ele = document.getElementById("accommodation_page");
+        ele.style.display = "none";
+        ele = document.getElementById("trip_plan_page");
+        ele.style.display = "none";
+        ele = document.getElementById("visitor_center_page");
+        ele.style.display = "none";
+    }    
+    ele = document.getElementById("thfooter_accommodation");
+    ele.onclick = function() {
+        ele = document.getElementById("home_page");
+        ele.style.display = "none";
+        ele = document.getElementById("activities_page");
+        ele.style.display = "none";
+        ele = document.getElementById("accommodation_page");
+        ele.style.display = "block";
+        ele = document.getElementById("trip_plan_page");
+        ele.style.display = "none";
+        ele = document.getElementById("visitor_center_page");
+        ele.style.display = "none";
+    }   
+    ele = document.getElementById("thfooter_trip_plan");
+    ele.onclick = function() {
+        ele = document.getElementById("home_page");
+        ele.style.display = "none";
+        ele = document.getElementById("activities_page");
+        ele.style.display = "none";
+        ele = document.getElementById("accommodation_page");
+        ele.style.display = "none";
+        ele = document.getElementById("trip_plan_page");
+        ele.style.display = "block";
+        ele = document.getElementById("visitor_center_page");
+        ele.style.display = "none";
+    }   
+    ele = document.getElementById("thfooter_visitor_center");
+    ele.onclick = function() {
+        ele = document.getElementById("home_page");
+        ele.style.display = "none";
+        ele = document.getElementById("activities_page");
+        ele.style.display = "none";
+        ele = document.getElementById("accommodation_page");
+        ele.style.display = "none";
+        ele = document.getElementById("trip_plan_page");
+        ele.style.display = "none";
+        ele = document.getElementById("visitor_center_page");
+        ele.style.display = "block";
+    }
+    </script>
+
+    <!--Accommodation Page-->
+    <div id="accommodation_page">
+
+    </div>
+    
+    <!--Trip Plan Page-->
+    <div id="trip_plan_page">
+        <table cellspacing="40">
+            <tr>
+                <td>
+                    <table cellspacing="10" width="700" align="center">
+                        <tr>
+                            <td colspan="6">
+                                <h2>Ithaca Trip Planner</h2>
+                            </td>
+                        </tr>
+                        <tr cellspacing="100">
+                            <td class="ptripplan" width="300" colspan="3">
+                                <p class="tripplan">Plan a Trip
+                                </p>
+                                <p class="trip">Our Trip Planner lets you browse and book holiday accommodation, transport &amp; activities online, and save all your choices in one safe place.
+                                </p>
+                            </td>
+                            <td class="ptripplan" width="300" colspan="3">
+                                <p class="tripplan">Add Notes
+                                </p>
+                                <p class="trip">You can add notes and dates to your product choices, and email itineraries to your friends and family for feedback, or just to keep them informed.
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="6">
+                                <p class="trip">Use Ithaca Trip Planner to explore the links below and build your own trip in Ithaca.
+                                </p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td class="tripplan" height="55" width="180" align="center">
+                                <li class="tripplan" id="plan_activities">Things to Do</li>
+                            </td>
+                            <td></td>
+                            <td></td>
+                            <td class="tripplan" height="55" width="180" align="center">
+                                <li class="tripplan" id="plan_accommodation">Places to Stay</li>
+                            </td>
+                            <td></td>
+                        </tr>
+                    </table>
+                    <table cellspacing="30" align="center">
+                        <hr class="trip" width="720"/>
+                        <tr>
+                            <td>
+                                <img class="tripplan" src="http://i.imgur.com/HgmB2Xk.jpg">
+                            </td>
+                            <td width="445">
+                                <ul class="tripplan">
+                                    <li class="tripplan"><a class="tripplan" href="Routes.html">Classic Routes</a></li>
+                                </ul>
+                                <p class="trip">International parents? A family with children? Self-driver traveller?<br/>Plan to stay for 1-day, 2-day, etc?<br/>No matter why you come and how long you'll stay, you'll find routes specially designed for you.
+                                </p>
+                            </td>
+                        </tr>
+                    </table>
+                    <table cellspacing="30" align="center">
+                        <hr class="trip" width="720"/>
+                        <tr>
+                            <td>
+                                <img class="tripplan" src="http://i.imgur.com/xBilAlP.jpg">
+                            </td>
+                            <td width="445">
+                                <ul class="tripplan">
+                                    <li class="tripplan"><a class="tripplan" href="#">Group Tour Information</a></li>
+                                </ul> 
+                                <p class="trip">Choose a custom group itinerary?<br/>Interested in thematic tours?<br/>Find places to pick fruits and taste wine?<br/>Need interpreters or promotional materials?<br/>Click to find the best of Ithaca we will offer to you!
+                                </p>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+                <td class="sidebar" width="300" valign="top">
+                    <ul>
+                        <li><a class="upcoming" href="http://www.visitithaca.com/about-ithaca-tompkins-county/getting-here.html">Transportation</a></li>
+                    </ul>
+                    <a href="https://www.google.com/maps/place/Ithaca,+NY/@42.4422877,-76.4983749,13z/data=!3m1!4b1!4m2!3m1!1s0x89d08182e0af88f7:0xae52768a56ece74"><img class="upevents"src="http://i.imgur.com/a2cK36Z.gif"/></a>
+                    <table width="260" cellspacing="7" align="center">
+                        <tr>
+                            <td class="transport">
+                                <a class="transport" href="http://www.visitithaca.com/about-ithaca-tompkins-county/getting-here.html#Maps">Maps</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="transport">
+                                <a class="transport" href="http://www.visitithaca.com/about-ithaca-tompkins-county/getting-here.html#Driving%20Directions">Driving Directions</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="transport">
+                                <a class="transport" href="http://www.visitithaca.com/about-ithaca-tompkins-county/getting-here.html#Air%20Service%20&amp;%20Charters">Air Service</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="transport">
+                                <a class="transport" href="http://www.visitithaca.com/about-ithaca-tompkins-county/getting-here.html#Bus%20Services">Bus Service</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="transport">
+                                <a class="transport" href="http://www.visitithaca.com/about-ithaca-tompkins-county/getting-here.html#Car%20Rentals">Automobile Rentals</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td height="40">
+                            </td>
+                        </tr>
+                    </table> 
+                    <ul>
+                        <li><a class="upcoming" href="#">Visitor Information</a></li>
+                    </ul>
+                    <table width="260" cellspacing="7" align="center">
+                        <tr>
+                            <td class="transport">
+                                <a class="transport" href="http://www.visitithaca.com/visitor-info/the-ithaca-experience.html">The Ithaca Experience</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="transport">
+                                <a class="transport" href="http://www.visitithaca.com/about-ithaca-tompkins-county/top-10s.html">Top 10s</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="transport">
+                                <a class="transport" href="http://www.visitithaca.com/about-ithaca-tompkins-county/facts-trivia.html">Interesting Facts</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="transport">
+                                <a class="transport" href="http://www.visitithaca.com/additional-information/">Additional Information</a>
+                            </td>
+                        </tr>
+                    </table> 
+                </td>
+            </tr>
+        </table>
+
+    <script type="text/javascript">
+    ele = document.getElementById("plan_activities");
+    ele.onclick = function() {
+        ele = document.getElementById("home_page");
+        ele.style.display = "none";
+        ele = document.getElementById("activities_page");
+        ele.style.display = "block";
+        ele = document.getElementById("accommodation_page");
+        ele.style.display = "none";
+        ele = document.getElementById("trip_plan_page");
+        ele.style.display = "none";
+        ele = document.getElementById("visitor_center_page");
+        ele.style.display = "none";
+    }    
+    ele = document.getElementById("plan_accommodation");
+    ele.onclick = function() {
+        ele = document.getElementById("home_page");
+        ele.style.display = "none";
+        ele = document.getElementById("activities_page");
+        ele.style.display = "none";
+        ele = document.getElementById("accommodation_page");
+        ele.style.display = "block";
+        ele = document.getElementById("trip_plan_page");
+        ele.style.display = "none";
+        ele = document.getElementById("visitor_center_page");
+        ele.style.display = "none";
+    }   
+    </script>
+    
+        <div class="footer">
+            <table align="center">
+                <tr>
+                    <td>
+                        <li id="trfooter_home" class="footer">Home</li>  
+                    </td>
+                    <td>                
+                        <li id="trfooter_activities" class="footer">Things to Do</li>
+                    </td>
+                    <td>
+                        <li id="trfooter_accommodation" class="footer">Places to Stay</li>
+                    </td>
+                    <td>
+                        <li id="trfooter_trip_plan" class="footer">Plan Your Trip</li>
+                    </td>
+                    <td>
+                        <li id="trfooter_visitor_center" class="footer">Visitor Center</li>
+                    </td>
+                </tr>
+            </table>
+            <p class="footer">
+                Ithaca/Tompkins County Convention &amp; Visitors Bureau<br/>
+                904 East Shore Drive, Ithaca, NY 14850<br/>
+                Phone: (607) 272-1313 | Toll Free: (800)-28-ITHACA    
+            </p>
+        </div>       
+    </div>
+    <script type="text/javascript">
+    ele = document.getElementById("trfooter_home");
+    ele.onclick = function() {
+        ele = document.getElementById("home_page");
+        ele.style.display = "block";
+        ele = document.getElementById("activities_page");
+        ele.style.display = "none";
+        ele = document.getElementById("accommodation_page");
+        ele.style.display = "none";
+        ele = document.getElementById("trip_plan_page");
+        ele.style.display = "none";
+        ele = document.getElementById("visitor_center_page");
+        ele.style.display = "none";
+    }   
+    ele = document.getElementById("trfooter_activities");
+    ele.onclick = function() {
+        ele = document.getElementById("home_page");
+        ele.style.display = "none";
+        ele = document.getElementById("activities_page");
+        ele.style.display = "block";
+        ele = document.getElementById("accommodation_page");
+        ele.style.display = "none";
+        ele = document.getElementById("trip_plan_page");
+        ele.style.display = "none";
+        ele = document.getElementById("visitor_center_page");
+        ele.style.display = "none";
+    }    
+    ele = document.getElementById("trfooter_accommodation");
+    ele.onclick = function() {
+        ele = document.getElementById("home_page");
+        ele.style.display = "none";
+        ele = document.getElementById("activities_page");
+        ele.style.display = "none";
+        ele = document.getElementById("accommodation_page");
+        ele.style.display = "block";
+        ele = document.getElementById("trip_plan_page");
+        ele.style.display = "none";
+        ele = document.getElementById("visitor_center_page");
+        ele.style.display = "none";
+    }   
+    ele = document.getElementById("trfooter_trip_plan");
+    ele.onclick = function() {
+        ele = document.getElementById("home_page");
+        ele.style.display = "none";
+        ele = document.getElementById("activities_page");
+        ele.style.display = "none";
+        ele = document.getElementById("accommodation_page");
+        ele.style.display = "none";
+        ele = document.getElementById("trip_plan_page");
+        ele.style.display = "block";
+        ele = document.getElementById("visitor_center_page");
+        ele.style.display = "none";
+    }   
+    ele = document.getElementById("trfooter_visitor_center");
+    ele.onclick = function() {
+        ele = document.getElementById("home_page");
+        ele.style.display = "none";
+        ele = document.getElementById("activities_page");
+        ele.style.display = "none";
+        ele = document.getElementById("accommodation_page");
+        ele.style.display = "none";
+        ele = document.getElementById("trip_plan_page");
+        ele.style.display = "none";
+        ele = document.getElementById("visitor_center_page");
+        ele.style.display = "block";
+    }
+    </script>
+    
+    <!--Visitor Center Page-->
+    <div id="visitor_center_page">
+        <table class="homepage" cellspacing="30" align="center">
+            <tr>
+                <td width="300">
+                    <img src="http://i.imgur.com/OtMG7v2.jpg" width="300" height="225"/>
+                </td>
+                <td width="300">
+                    <p class="vaddress">The Ithaca/Tompkins County Convention &amp; Visitors Bureau Staff would love to hear from you.<br/>We are dedicated to do all our best to offer you excellent destination selection and generate excitement for your event:
+                    </p>
+                    <a class="vinfo" href="http://www.visitithaca.com/meetings/conferences.html">Meetings &amp; Conferences</a><br/>
+                    <a class="vinfo" href="http://www.visitithaca.com/groups.html">Group Tours</a><br/>
+                    <a class="vinfo" href="http://www.visitithaca.com/event-planning.html">Weddings &amp; Social Gatherings</a>
+                </td>
+                <td width="300">
+                    <p class="staff">Contact Us:<br/>Telephone: 607-272-1313<br/>Toll free: 800-284-8422
+                    </p>
+                    <p class="vaddress">Visit one of our Visitor Centers:<br/>We are located on the shores of beautiful Cayuga Lake at:
+                    </p>
+                    <a class="vaddress" href="https://www.google.com/maps/place/904+E+Shore+Dr,+Ithaca,+NY+14850/@42.464425,-76.499752,17z/data=!3m1!4b1!4m2!3m1!1s0x89d0823308121c91:0x342ba43d53b81152">904 East Shore Dr., Ithaca NY 14850</a>
+                    <p class="vaddress">and In the center of Downtown Ithaca, on the Commons at:
+                    </p>
+                    <a class="vaddress" href="https://www.google.com/maps/place/171+E+State+St,+Ithaca+Commons,+Ithaca,+NY+14850/@42.4393318,-76.4969664,17z/data=!3m1!4b1!4m2!3m1!1s0x89d0819c8080666d:0xdfb57dc372b8c2cb">171 E. State St., Downtown Ithaca, Ithaca, NY 14850</a>
+                </td>
+            </tr>
+        </table>
+        <table class="vcenter" cellspacing="30" rules="cols" frame="void">
+            <tr>
+                <td width="330" align="center" style="border: solid green; border-width: 0px 1px 1px 0px">
+                    <a class="vcenter" href="http://www.visitithaca.com/meetings/conferences.html">Meetings &amp; Conferences</a>
+                    <div id="vinfo1">
+                        <p class="hide">Coordinate personalized site inspections of Ithaca hotels, meeting venues, and attractions; Identify group attractions and programs that suit your interests; Provide insightful information for your delegates and co-workers.
+                        </p>
+                    </div>
+                    <p class="vaddress">Contact:<br/>Mary Rachun</p>
+                    <a class="staff" href="mailto:mary@visitithaca.com">mary@visitithaca.com</a>
+                    <p class="vaddress">Sarah Imes</p>
+                    <a class="staff" href="mailto:sarah@visitithaca.com">sarah@visitithaca.com</a>
+                </td>
+                <td width="330" align="center" style="border: solid green; border-width: 0px 1px 1px 0px">
+                    <a class="vcenter" href="http://www.visitithaca.com/groups.html">Group Tours</a>
+                    <div id="vinfo2">
+                        <p class="hide">Custom group itinerary planning &amp; thematic tours; Assistance with selection of group overnight accommodations; Group dining recommendations; Familiarization trips and site visits; Promotional materials; Interpreters available.
+                        </p>
+                    </div>
+                    <p class="vaddress">Contact:<br/>Mary Rachun</p>
+                    <a class="staff" href="mailto:mary@visitithaca.com">mary@visitithaca.com</a>
+                    <p class="vaddress">Sarah Imes</p>
+                    <a class="staff" href="mailto:sarah@visitithaca.com">sarah@visitithaca.com</a>
+                </td>
+                <td width="330" align="center" style="border: solid green; border-width: 0px 1px 1px 0px">
+                    <a class="vcenter" href="http://www.visitithaca.com/event-planning.html">Weddings &amp; Social Gatherings</a>
+                    <div id="vinfo3">
+                        <p class="hide">Bridal &amp; baby showers; Anniversaries; Family reunions; Bar/Bat mitzvahs; Birthday parties; Engagement celebrations; Bachelor/bachelorette getaways; Graduation Celebrations.
+                        </p>
+                    </div>
+                    <p class="vaddress">Contact:<br/>Mary Rachun</p>
+                    <a class="staff" href="mailto:mary@visitithaca.com">mary@visitithaca.com</a>
+                    <p class="vaddress">Sarah Imes</p>
+                    <a class="staff" href="mailto:sarah@visitithaca.com">sarah@visitithaca.com</a>
+                </td>
+            </tr>
+        </table>
+        <script type="text/javascript">
+            $(function() {
+                $("#vinfo1").mouseover(function() {
+                    $("#vinfo1").toggleClass("show-description");
+                }).mouseout(function(){  
+                    $(this).removeClass("show-description");  
+                });
+            });
+            $(function() {
+                $("#vinfo2").mouseover(function() {
+                    $("#vinfo2").toggleClass("show-description");
+                }).mouseout(function(){  
+                    $(this).removeClass("show-description");  
+                });
+            });
+            $(function() {
+                $("#vinfo3").mouseover(function() {
+                    $("#vinfo3").toggleClass("show-description");
+                }).mouseout(function(){  
+                    $(this).removeClass("show-description");  
+                });
+            });
+        </script>
+        <table cellspacing="30">
+            <tr>
+                <td valign="top" width="300">
+                    <p class="vtitle">View Travel Guide Online</p>
+                    <table width="300" cellspacing="10" align="center">
+                        <tr>
+                            <td class="transport">
+                                <a class="transport" href="http://visitithaca.uberflip.com/i/254698">2014 Travel Guide Online Flipbook</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="transport">
+                                <a class="transport" href="http://issuu.com/visitithaca.com/docs/cayugalakewinetrail.com">Cayuga Wine Trail Online Flipbook</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="transport">
+                                <a class="transport" href="http://issuu.com/visitithaca.com/docs/discovery_trail_brochure_2011?e=4860819/2595500">The Discovery Trail Online Flipbook</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="request">
+                                <a class="request" href="http://www.visitithaca.com/request-a-travel-guide.html">Request Brochure by Mail</a>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+                <td class="staff" valign="top" width="300">
+                    <p class="vtitle">Staff Directory</p>
+                    <p class="vaddress">Bruce Stoff<br/>Director</p>
+                    <a class="staff" href="mailto:bruce@visitithaca.com">bruce@visitithaca.com</a>
+                    <p class="vaddress">Kristy Mitchell<br/>Integrated Marketing Manager</p>
+                    <a class="staff" href="mailto:kristy@visitIthaca.com">kristy@visitIthaca.com</a>
+                    <p class="vaddress">Cassandra Jenis<br/>Position: Marketing Coordinator</p>
+                    <a class="staff" href="mailto:cassie@visitIthaca.com">cassie@visitIthaca.com</a>
+                    <p class="vaddress">Jodi LaPierre<br/>Visitor Services Manager</p>
+                    <a class="staff" href="mailto:jodi@VisitIthaca.com">jodi@VisitIthaca.com</a>
+                </td>
+                <td class="staff" valign="top" width="300">
+                    <h4><br/></h4>
+                    <p class="vaddress">Rachael Atkins- Walpole<br/>Assistant Visitor Services Manager</p>
+                    <a class="staff" href="mailto:rachael@visitIthaca.com">rachael@visitIthaca.com</a>
+                    <p class="vaddress">Mary Rachun<br/>Director of Sales</p>
+                    <a class="staff" href="mailto:mary@visitithaca.com">mary@visitithaca.com</a>
+                    <p class="vaddress">Sarah Imes<br/>Sales Manager</p>
+                    <a class="staff" href="mailto:sarah@visitithaca.com">sarah@visitithaca.com</a>
+                </td>
+            </tr>
+        </table>
+        <div class="footer">
+            <table align="center">
+                <tr>
+                    <td>
+                        <li id="vfooter_home" class="footer">Home</li>  
+                    </td>
+                    <td>                
+                        <li id="vfooter_activities" class="footer">Things to Do</li>
+                    </td>
+                    <td>
+                        <li id="vfooter_accommodation" class="footer">Places to Stay</li>
+                    </td>
+                    <td>
+                        <li id="vfooter_trip_plan" class="footer">Plan Your Trip</li>
+                    </td>
+                    <td>
+                        <li id="vfooter_visitor_center" class="footer">Visitor Center</li>
+                    </td>
+                </tr>
+            </table>
+            <p class="footer">
+                Ithaca/Tompkins County Convention &amp; Visitors Bureau<br/>
+                904 East Shore Drive, Ithaca, NY 14850<br/>
+                Phone: (607) 272-1313 | Toll Free: (800)-28-ITHACA    
+            </p>
+        </div>       
+    </div>
+    <script type="text/javascript">
+    ele = document.getElementById("vfooter_home");
+    ele.onclick = function() {
+        ele = document.getElementById("home_page");
+        ele.style.display = "block";
+        ele = document.getElementById("activities_page");
+        ele.style.display = "none";
+        ele = document.getElementById("accommodation_page");
+        ele.style.display = "none";
+        ele = document.getElementById("trip_plan_page");
+        ele.style.display = "none";
+        ele = document.getElementById("visitor_center_page");
+        ele.style.display = "none";
+    }   
+    ele = document.getElementById("vfooter_activities");
+    ele.onclick = function() {
+        ele = document.getElementById("home_page");
+        ele.style.display = "none";
+        ele = document.getElementById("activities_page");
+        ele.style.display = "block";
+        ele = document.getElementById("accommodation_page");
+        ele.style.display = "none";
+        ele = document.getElementById("trip_plan_page");
+        ele.style.display = "none";
+        ele = document.getElementById("visitor_center_page");
+        ele.style.display = "none";
+    }    
+    ele = document.getElementById("vfooter_accommodation");
+    ele.onclick = function() {
+        ele = document.getElementById("home_page");
+        ele.style.display = "none";
+        ele = document.getElementById("activities_page");
+        ele.style.display = "none";
+        ele = document.getElementById("accommodation_page");
+        ele.style.display = "block";
+        ele = document.getElementById("trip_plan_page");
+        ele.style.display = "none";
+        ele = document.getElementById("visitor_center_page");
+        ele.style.display = "none";
+    }   
+    ele = document.getElementById("vfooter_trip_plan");
+    ele.onclick = function() {
+        ele = document.getElementById("home_page");
+        ele.style.display = "none";
+        ele = document.getElementById("activities_page");
+        ele.style.display = "none";
+        ele = document.getElementById("accommodation_page");
+        ele.style.display = "none";
+        ele = document.getElementById("trip_plan_page");
+        ele.style.display = "block";
+        ele = document.getElementById("visitor_center_page");
+        ele.style.display = "none";
+    }   
+    ele = document.getElementById("vfooter_visitor_center");
+    ele.onclick = function() {
+        ele = document.getElementById("home_page");
+        ele.style.display = "none";
+        ele = document.getElementById("activities_page");
+        ele.style.display = "none";
+        ele = document.getElementById("accommodation_page");
+        ele.style.display = "none";
+        ele = document.getElementById("trip_plan_page");
+        ele.style.display = "none";
+        ele = document.getElementById("visitor_center_page");
+        ele.style.display = "block";
+    }
+    </script>
+    </div>
+
+    <script type="text/javascript">
+        C1=window.location.href.split("?")[1];
+        C2=C1.split("=")[1];
+        ele = document.getElementById(C2);
+        if(ele != null) {
+            ele = document.getElementById("home_page");
+            ele.style.display = "none";
+            ele = document.getElementById("activities_page");
+            ele.style.display = "none";
+            ele = document.getElementById("accommodation_page");
+            ele.style.display = "none";
+            ele = document.getElementById("trip_plan_page");
+            ele.style.display = "none";
+            ele = document.getElementById("visitor_center_page");
+            ele.style.display = "none";
+            ele = document.getElementById(C2);
+            ele.style.display = "block";
+        }
+    </script>
+  
+    <!--Contact Us-->  
+    <div class="contact">
+        <p class="contact">Chat with Us<br/>
+        <small class="contact">We're not around, but we'd like to chat with you and reply soon.
+        <span class="information">
+        <input type="Information" placeholder="Type your name"/>
+        <input type="Information" placeholder="Type your email"/>
+        <input type="information" placeholder="Leave us a note"/>
+        </small>
+        </p>
+    </div>
+    <script>
+        $("div.contact").on("click", function() {
+        $(this).toggleClass("show-description");
+        });
+    </script> 
+
+</body>
+</html>

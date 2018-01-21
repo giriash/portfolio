@@ -1,0 +1,135 @@
+<html>
+<head>
+<script src="//d3js.org/d3.v3.min.js"></script>
+<script src="//d3js.org/topojson.v1.min.js"></script>
+<script src="http://dimplejs.org/dist/dimple.v2.2.0.min.js"></script>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+</head>
+
+<body>
+
+
+    <header> 
+      <div class="container">
+        <div class="header-style">
+            <h2>Adult Obesity In United States</h2>
+        </div>
+      </div>
+
+      
+    </header>
+
+
+    <div class="clear"></div>
+    </br>
+
+    <div class="content">
+
+   
+
+      <div class="col-2">
+        <div id="menu">
+              <div id="results">
+                <h3>STATE: <span id="state-result"></span></h3>
+                <h3>Obesity %: <span id="obesity-result"></span></h3>
+                <h3>Poverty %: <span id="poverty-result"></span></h3>
+              </div>
+
+              <hr>
+
+              <div id="buttons">
+                  <h4>Select a variable then click a state</h4>
+                  <!--label><input type="radio" name="feature" value="0" onclick="select()" checked > Convenience Store Growth</label><br-->
+                  <label class="radio-class-0"><input type="radio" name="feature" onclick="select()" value="0" > </label>
+                  <label class="radio-class-1"><input type="radio" name="feature" onclick="select()" value="1"> </label>
+                  <label class="radio-class-2"><input type="radio" name="feature" onclick="select()" value="2"> </label><br>
+                  <div class="radio-text-class text0"> <p> Fastfood<br>Change</p> </div>
+                  <div class="radio-text-class text1"> <p> Farmmarket<br>Change</p> </div>
+                  <div class="radio-text-class text2"> <p> Grocery<br>Change</p> </div>
+                <!--button onclick="select()">click again to see</button-->
+              </div>
+
+              <hr>
+              
+              <div>
+                <h4 style="padding-left: 10px;">Click on a state to see the % change from 2007-2012</h4>  
+                <div id="linechart"></div>
+              </div>
+             
+              <hr>
+             
+              
+
+          </div>
+      </div>
+
+      <div class="col-8">
+        <div class="map-description">
+              <h2>1. Obesity and Poverty Prevalence Map, 2014</h2>
+                        
+
+              <img src="img/hover.svg"/>    
+              <p class="desc" id ="action-desc">Hover over states for more information. Click a state to lock the selection and click again to unlock</p>
+              <div id="legend-1">
+                <div id="circlelegend"></div>
+                <p class="desc" id = "legend1-desc"> Percentage of Obesity<br>
+                                              (Body Mass Index of 30+)</p>
+              </div>
+
+              <div id="legend-1">
+                <div id="poverty-circle-legend"></div>
+                <p class="desc" id = "legend1-desc"> Percentage of Poverty <br>
+                                              (Body Mass Index of 30+)</p>
+              </div>
+
+        </div>
+        <div id="map1"></div>
+        <script src="js/map1.js"></script>
+        <div id="legend1">
+        <script type="text/javascript" src="js/legends.js"></script>
+        </div>
+          <p id="datasources">Data sources for this map: <a href= "http://www.cdc.gov/obesity/data/table-adults.html">CDC Obesity</a>, <a href="http://www.ers.usda.gov/data-products/food-environment-atlas/data-access-and-documentation-downloads.aspx">USDA</a></p>
+      </div>
+
+      <div class="col-8">
+        <div class="map-description">
+          <h2>2. Obesity vs Poverty </h2>
+          <input type="checkbox" class="checkbox" id="sort-obesity" name="check" value="sort">
+          <p class="sort-text-1">Sort by Obesity</p>
+          <input type="checkbox" class="checkbox" id="sort-poverty" name="check" value="sort">
+          <p class="sort-text-2">Sort by Poverty</p>
+          <div id="results-map2">
+          <h3>STATE: <span id="state-result-map2"></span></h3>
+                <!-- <h3>Obesity % growth: <span id="obesity-result"></span></h3>
+                <h3>Poverty % growth: <span id="poverty-result"></span></h3> -->
+          </div>
+          <div id="map2"></div>
+          <script src="js/map2.js"></script> 
+        </div>
+      </div>
+    
+        
+      
+        
+        
+      
+
+          
+
+            
+            
+      
+          </div> 
+    </div>
+        
+    
+    
+    <br><br>
+
+   
+    
+
+</body>
+</html>

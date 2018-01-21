@@ -1,9 +1,274 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+
+<html lang="en">
 <head>
-	<title></title>
+  <meta charset="utf-8">
+  <title>Comic Book Store System</title>
+  <meta name="description" content="Gravity">
+  <meta name="keywords" content="Gravity, simplicity, theme, html5, single page, boxed portfolio">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="author" content="zhelin.land">
+  <link rel="icon" type="image/png" href="img/icon.png" />
+
+
+<!--Style-->
+
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/style-responsive.css">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  
+  <!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  
 </head>
+
 <body>
+
+  <!--Header-->
+  <header id="fullscreen">
+      <div class="logo" id="full"><a href="../index.html">Zhe Lin</a></div>
+      <ul class="header-nav" id="sub-header">
+        <li><a href="../img/resume.pdf">Resume</a></li>
+        <li><a href="mailto:zl485@cornell.edu">Contact</a></li>
+      </ul>
+      <div class="help-title " id="helpTitle">
+          <a href="#" class="hvr-icon-up">comic Book Store System</a>
+      </div>
+  </header>
+  <div class="clear"></div>
+  <!--Content-->
+
+  <div class="content" id="ajax-content">
+        <div class="project-intro"> 
+          <div class="text-intro">
+            <div class="project-title">
+              <h1>Comic Book Store System</h1>
+            </div>
+            <div class="two-column">
+              <p>
+                Software Engineering Project
+                <br /><br/>PROGRAMMING LANGUAGE: Java
+                <br /><br/>PROJRCT DESCRIPTION: <br/>
+                Using the software system, the librarian can conveniently manage the information both of the books and customers and the customers can also look up the book information they need. The software process falls into six stages: project management; requirements analysis; system analysis; system design; program implementation and testing. It is developed by Java coding.
+                
+            </div>   
+          </div>
+          <div class="one-column-img">
+              <img class = '' src="img/portfolio/comicbookstore/bg.png">
+          </div>
+          <div class="clear"></div>             
+          
+        </div>
+        <div class="description">
+          <div class="text-intro">
+              <h2>Functionality</h2>
+                  <h6>This software provides service to two kind people: store staff including owner and clerk, customers including user, subscriber and distributor.</h6>
+                  <div class="col-5">
+                        <h3>For store staff:</h3>
+                        <h6>
+                          <ul>
+                            <li>login function</li>
+                            <li>search comic book</li>
+                            <li>manage customer</li>
+                            <ul>
+                              <li>browse customer</li>
+                              <li>rent book</li>
+                            </ul>
+                            <li>manage comic book</li>
+                            <ul>
+                              <li>buy comic book</li>
+                              <li>stroke comic book</li>
+                              <li>trade comic book</li>
+                              <li>consignment comic book</li>
+                            </ul>
+                            <li>create/manage card for customers</li>
+                          </ul>
+                        </h6>
+                  </div>
+                  <div class="col-5">
+                        <h3>For customers:</h3>
+                          <h6><ul class="content-list">
+                            <li>search comic book</li>
+                            <li>browse comic book</li>
+                            <ul class="sub-list">
+                              <li>buy comic book</li>
+                              <li>trade comic book</li>
+                              <li>consignment comic book</li>
+                            </ul>
+                            <li>rent comic book</li>
+                          </ul></h6>
+                  </div>
+                  <div class="clear"></div>
+                  <h3>Use Case Model</h3>
+                  <img src="img/portfolio/comicbookstore/usecCase.png">
+          </div>
+          
+
+
+
+          <div class="text-intro">
+              <h2>develop process</h2>
+                  <h3>Step 1: Requirement Analysis</h3>
+                      <h6>To develop this system, I began with a detailed requirements capture to identify the real needs of this system by analyzing the received specifications and investigating relative people. At the end of this stage, the use-case model, architecture description, user interface prototype, and glossary are obtained.</h6>
+
+                  <h3>Step 2: System Analysis</h3>
+                      <h6> Identify packages and built relationship between them. And built system sequence.</h6>
+                      <h4>Architecture Analysis:</h4>
+                      <h4>1. identifying analysis package</h4>
+                          <h6>Analysis packages are identified by allocating the main portion of a number of use cases, which are   required to support a specific actor of the system, to a specific package and then realize the corresponding functionality within the package.</h6>
+                      <h4>2. System sequence diagram</h4>
+
+
+                  <h3>Step 3: System Design</h3>
+                      <h4>1. Communication Diagram</h4>
+                      <h4>2. Design classes</h4>
+                          <img src="img/portfolio/comicbookstore/allclass.png" >
+                      <h4>3. Identifying associations and aggregations</h4>
+                          <h6>Association and aggregation are used to describe the relationships between design classes. (e.g. a “Card” class may have a single association with a “CardID” class) According to our generic design mechanism, we should minimize the number of relationships (associations) between classes. Hence, at the end of this activity, we manage to remove all of the associations between our entity classes. That is, searching or modifying any of the entity classes can be done without invoking other entity classes.</h6>
+                      <h4>4. Identifying generalizations</h4>
+                          <h6>Generalization represents a relationship in which one class (the child) is derived from another class (the parent). For example, “BusinessRecord” class can be defined as the parent class while “RentRecord” class and “BuyRecord” class are defined as child class. In this system, no generalization relationship is applied. </h6>
+                      <h5>5. Describing methods</h5>
+                          <h6>Methods are used to specify how operations are realized. They will be generated using Java code directly at the next stage, i.e. implementation stage. Please see the next part of this report for more detai</h6>
+
+
+                  <h3>Step 4: System Implementation</h3>
+                      <div class="center-block">
+                        <div class="half-width">
+                            <img src="img/portfolio/comicbookstore/newlogin.png">
+                            <h4 class="center-text">login page</h4>
+                        </div>
+                      </div>
+                      <br/><br/>
+                      <div class="clear"></div>
+
+
+                      <div class="col-5">
+                          <div class="col-5-imgContainer-left"><img src="img/portfolio/comicbookstore/newhomepage.png"></div>
+                          <h4 class="center-text">home page</h4>
+                      </div>
+                      <div class="col-5">
+                          <div class="col-5-imgContainer-right"><img src="img/portfolio/comicbookstore/newrecord.png"></div>
+                          <h4 class="center-text">records list page</h4>
+                      </div>
+                      <div class="clear"></div>
+                      <br/><br/> 
+
+
+                      <div class="col-5">
+                          <div class="col-5-imgContainer-left"><img src="img/portfolio/comicbookstore/newsale.png"></div>
+                          <h4 class="center-text">sale book page</h4>
+                      </div>
+                      <div class="col-5">
+                          <div class="col-5-imgContainer-right"><img src="img/portfolio/comicbookstore/newrent.png"></div>
+                          <h4 class="center-text">rent book page</h4>
+                      </div>
+                      <div class="clear"></div> <br/><br/>
+
+
+                      <div class="col-5">
+                          <div class="col-5-imgContainer-left"><img src="img/portfolio/comicbookstore/newreturn.png"></div>
+                          <h4 class="center-text">renturn book page</h4>
+                      </div>
+                      <div class="col-5">
+                          <div class="col-5-imgContainer-right"><img src="img/portfolio/comicbookstore/newbooks.png"></div>
+                          <h4 class="center-text">books list page</h4>
+                      </div>
+                      <div class="clear"></div> <br/><br/>
+
+
+                      <div class="col-5">
+                          <div class="col-5-imgContainer-left"><img src="img/portfolio/comicbookstore/newbookinfo.png"></div>
+                          <h4 class="center-text">book information page</h4>
+                      </div>
+                      <div class="col-5">
+                          <div class="col-5-imgContainer-right"><img src="img/portfolio/comicbookstore/newcustomer.png"></div>
+                          <h4 class="center-text">customers list page</h4>
+                      </div>
+                      <div class="clear"></div> <br/><br/>
+
+
+                      <div class="col-5">
+                          <div class="col-5-imgContainer-left"><img src="img/portfolio/comicbookstore/newcustomerinfo.png"></div>
+                          <h4 class="center-text">customer information page</h4>
+                      </div>
+                      <div class="col-5">
+                          <div class="col-5-imgContainer-right"><img src="img/portfolio/comicbookstore/newcard.png"></div>
+                          <h4 class="center-text">cards list page</h4>
+                      </div>
+                      <div class="clear"></div> <br/><br/>
+
+                      <div class="col-5">
+                          <div class="col-5-imgContainer-left"><img src="img/portfolio/comicbookstore/newcardinfo.png"></div>
+                          <h4 class="center-text">card information page</h4>
+                      </div>
+                      <div class="col-5">
+                          <div class="col-5-imgContainer-right"><img src="img/portfolio/comicbookstore/newaccount.png"></div>
+                          <h4 class="center-text">account list page</h4>
+                      </div>
+                      <div class="clear"></div> <br/><br/>
+
+                      
+                     
+                  <h3>Step 5: Test</h3>
+                      <h6>Component Test</h6>
+                      <h6>System Test</h6>
+          </div>
+          
+
+          
+        </div>
+       
+            
+        <div class="prev-next">
+              <div class="prev-button"><a href="arrow.html">Previous work</a></div>
+              <div class="next-button"><a href="baiduERP.html">Next work</a></div>
+        </div>
+        
+    </div>
+
+
+
+  <!--Home Sidebar-->
+
+<div id="ajax-sidebar"></div>
+
+
+ <!--Footer-->
+
+  <footer>
+    <div class="footer-margin">
+      <div class="social-footer">
+        <a href="https://www.linkedin.com/in/zhe-lin-443850103"><i class="fa fa-linkedin"></i></a>
+        <a href="https://www.behance.net/daisyzhelin"><i class="fa fa-behance"></i></a>
+      </div>     
+       <div class="copyright">© Copyright 2015 Zhe Lin. All Rights Reserved.</div>
+    </div>
+  </footer>
+
+
+
+
+<!--Scripts-->
+
+  <script src="../js/jquery.min.js"></script>
+  <script src="../js/jquery.easing.min.js"></script>
+  <script src="../js/modernizr.custom.42534.js" type="text/javascript"></script>
+  <script src="../js/jquery.waitforimages.js" type="text/javascript"></script>
+  <script src="../js/typed.js" type="text/javascript"></script>
+  <script src="../js/masonry.pkgd.min.js" type="text/javascript"></script>  
+  <script src="../js/imagesloaded.pkgd.min.js" type="text/javascript"></script>    
+  <script src="../js/jquery.jkit.1.2.16.min.js"></script>
+  <script src="../js/script.js" type="text/javascript"></script>
+  
+  <!-- <script>
+    $('#button, #buttons').on('click', function() {
+      $( ".opacity-nav" ).fadeToggle( "slow", "linear" );
+    // Animation complete.
+    });
+  </script> -->
+
 
 </body>
 </html>

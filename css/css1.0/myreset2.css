@@ -1,0 +1,490 @@
+
+#center{
+	margin: auto;
+	margin-top: 0px;
+	padding-top: 0px;
+	padding: auto;
+	text-align: center;
+}
+
+#left{ text-align: left; }
+#right{ text-align: right; }
+.p_left{ float: left; }
+.p_right{ float: right; }
+
+
+#name{
+	font-size: 50px;
+}
+
+.clear{
+	clear:both;
+}
+
+.topspace{
+	margin-top: 50px;
+}
+
+.hr_style{
+	width: 78%;
+	position:fixed; 
+	height:3px; 
+	margin-top:-70px; 
+	border:none;
+	border-top:3px solid;
+}
+
+.test_border{
+	border: 1px solid red;
+}
+
+/**About**/
+
+#site-type{
+	margin-left: 220px;
+
+	vertical-align: center;
+
+}
+
+.about1{
+	display: inline-block;
+	float: left;
+	width: 46%;
+	margin-left: -85px;
+
+
+}
+
+#selfie{
+	display: inline-block;
+    float:right;
+	width: 100%;
+}
+
+.about2{
+	font-family: 'Raleway', sans-serif;
+	float-displace: inline-block;
+	float: left;
+	/*padding-top: 80px;*/
+	padding-left: 70px;
+	width: 54%;
+	vertical-align: center;
+	margin-left: 10px;
+	text-align: right;
+}
+
+
+
+.sub-titile{
+	margin-right: 0px;
+}
+
+#portfolio-content{
+	position: absolute;
+}
+
+/*roles effects*/
+.myrole{
+	margin-top: 15px;
+	margin-left: 5px;
+	font-size: 16px;
+	font-weight: 300;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+
+.roles{
+	display: none;
+	max-width: 250px;
+	margin-left: 15px;
+	margin-top: 10px;
+	padding-left: 15px;
+	font-weight: 5px;
+	line-height: 20px;
+	border-style: dotted;
+	border-width: 3px;
+}
+
+.team{
+	margin-top: 15px;
+	margin-left: 5px;
+	font-size: 16px;
+	font-weight: 300;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+
+.members{
+	display: none;
+	max-width: 350px;
+	margin-left: 15px;
+	margin-top: 10px;
+	padding-left: 15px;
+	font-weight: 5px;
+	line-height: 20px;
+	border-style: dotted;
+	border-width: 3px;
+}
+
+.content-list{
+	color: #8d8d8d;
+	padding-left: 20px;
+	font-size:12px;
+	letter-spacing: 1px;
+	width: 100%;
+	list-style: decimal;
+
+}
+
+.sub-list{
+	color: #8d8d8d;
+	padding-left: 10px;
+	font-size:12px;
+	letter-spacing: 1px;
+	width: 100%;
+	list-style: disc;
+
+}
+
+.subcontent-left{
+	display: inline-block;
+	float: left;
+	width: 50%;
+}
+
+.subcontent-left{
+	display: inline-block;
+	float: left;
+	width: 50%;
+}
+
+#myrole-arrow,#roles-arrow,#team-arrow,#members-arrow{
+	color: #E1BEE8;
+}
+
+#myrole-cbp,#roles-cbp,#team-cbp,#members-cbp{
+	color: rgb(145,197,172);
+}
+
+#myrole-cm, #roles-cm, #team-cm, #members-cm{
+	color: rgb(243,171,172);
+}
+
+#myrole-gravity, #roles-gravity, #team-gravity, #members-gravity{
+	color: rgb(255,147,118);
+}
+
+
+#myrole-hevc{
+	color: rgb(255,238,168);
+}
+
+#roles-hevc{
+	border-color: rgb(255,238,16);
+}
+
+#myrole-book{
+	color: rgb(173,217,230);
+}
+
+#roles-book{
+	border-color: rgb(173,217,230)
+}
+
+/*subcontent features*/
+.subcontent{
+	width: 100%;
+	text-align: center;
+}
+
+
+/*colors*/
+.orange1 {color: #FEAD43;}
+.yellow1 {color: #FECD08;}
+.blue1 {color: #34C2E3;}
+.grey1 {color: #D8D8D8;}
+.red1 {color: #D75F27;}
+.data_visual_color {color: #c6e2a7;}
+.common_grey {color: #c3c3c3;}
+#cbptitlefont{ color: rgb(145,197,172);}
+#cmtitlefont{ color: rgb(243,171,172);}
+#cbstitlefont{ color: rgb(173,217,230);}
+#gravitytitlefont{ color: rgb(255,147,118);}
+#hevctitlefont{	color: rgb(255,238,16);}
+#arrowtitlefont{ color: #E1BEE8;}
+
+/*object features*/
+.pdfstyle{
+	width: 80%; 
+	height: 500px;
+	padding-left: 10%; 
+	margin-top: 30px;
+	border-style: solid;
+}
+
+.pdfstyle2{
+	width: 100%;
+	height: 800px;
+	padding-left:0px;
+	margin-top: 30px;
+	border-style: solid;
+}
+
+/*gravity*/
+.gravity-colorscheme{
+	display: inline-block;
+	float: right;
+	max-width: 120px;
+	padding-left: 0px;
+}
+.gravity-text1{
+	display: inline-block;
+	float: right;
+}
+
+/*image*/
+#imgstyle{
+	width: 100%;
+	padding-left: 0px;
+	padding-bottom: 0px;
+}
+.two_layer_container{
+	position: relative;
+	height: 520px;
+}
+.img_up{
+	width: 73%;
+	z-index: 100;
+	left: 13.6%;
+	top: 5.5%;
+	height: 62%;
+	position: absolute;
+}
+.img_outline{
+	z-index: -100;
+	position: relative;	
+}
+.img_90height{
+	height: 90%;
+}
+
+/*img and para*/
+.index_img{
+	padding-left: 12%;
+	text-align: center;
+}
+.img-full-screen{
+	width: 100%;
+	padding-left: 0px;
+}
+.img-70-screen{
+	 padding-left: 0px;
+	 width: 70%;
+	 position: relative;
+	 float: left;
+ }
+
+#img8{
+	 padding-left: 0px;
+	 width: 100%;
+}
+
+.left_right_block{
+	position: relative;
+	clear: both;
+	padding-top: 30px;
+}
+.p_like_text{
+	font-family: 'Raleway', sans-serif;
+	font-size: 13px;
+    color: #8d8d8d;
+    font-weight: 400;
+    line-height: 15px;
+    letter-spacing: 1px;
+    width: 100%;
+    text-align: left;
+}
+
+#para3-left{
+	vertical-align: middle;
+	padding-left: 0px;
+	padding-top: 15%;
+	text-align: left;
+	width:30%;
+	position: relative;
+	float: left;
+}
+
+#para3-right{
+	vertical-align: middle;
+	padding-left: 0px;
+	padding-top: 15%;
+	text-align: right;
+	width:30%;
+	position: relative;
+	float: left;
+}
+
+/*contact*/
+#map{
+	display: inline-block;
+	float: left;
+	width: 65%;
+	height: 250px;
+	background-color: #CCC;
+}
+
+#contactbox{
+	position: relative;
+	display: inline-block;
+	float: left;
+	margin-left: 5.3%;
+	padding-left: 2%;
+	padding-top: 50px;
+	width: 25%;
+	height: 250px;
+	border: 1px solid #bfbfbf;
+	font-size: 90%;
+	/*line-height: 25px;*/
+	vertical-align: middle;
+	text-align: left;
+}
+
+#contactbox p{
+	margin-top: 15px;
+}
+
+#contactbox p i{
+	padding-right: 20px;
+}
+
+
+/***************link effect*****************/
+
+#visitlink{
+	padding: 15px 20px;
+	color: black;
+	background-color: rgb(225,225,225);
+	cursor: pointer;
+}
+
+/*hover effect*/
+/* Ripple Out */
+@-webkit-keyframes hvr-ripple-out {
+	100% {
+
+		top: -12px;
+		right: -12px;
+		bottom: -12px;
+		left: -12px;
+		opacity: 0;
+	}
+}
+
+@keyframes hvr-ripple-out {
+	100% {
+
+		top: -12px;
+		right: -12px;
+		bottom: -12px;
+		left: -12px;
+		opacity: 0;
+	}
+}
+
+.hvr-ripple-out {
+
+	display: inline-block;
+	vertical-align: middle;
+	-webkit-transform: translateZ(0);
+	transform: translateZ(0);
+	box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	-moz-osx-font-smoothing: grayscale;
+	position: relative;
+}
+.hvr-ripple-out:before {
+
+	content: '';
+	position: absolute;
+	border: #e1e1e1 solid 6px;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+}
+.hvr-ripple-out:hover:before, .hvr-ripple-out:focus:before, .hvr-ripple-out:active:before {
+	-webkit-animation-name: hvr-ripple-out;
+	animation-name: hvr-ripple-out;
+}
+
+/* Underline From Left */
+.hvr-underline-from-left {
+	display: inline-block;
+	vertical-align: middle;
+	-webkit-transform: translateZ(0);
+	transform: translateZ(0);
+	box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	-moz-osx-font-smoothing: grayscale;
+	position: relative;
+	overflow: hidden;
+}
+.hvr-underline-from-left:before {
+	content: "";
+	position: absolute;
+	z-index: -1;
+	left: 0;
+	right: 100%;
+	bottom: 0;
+	background: rgb(214,214,214);
+	height: 4px;
+	-webkit-transition-property: right;
+	transition-property: right;
+	-webkit-transition-duration: 0.3s;
+	transition-duration: 0.3s;
+	-webkit-transition-timing-function: ease-out;
+	transition-timing-function: ease-out;
+}
+.hvr-underline-from-left:hover:before, .hvr-underline-from-left:focus:before, .hvr-underline-from-left:active:before {
+	right: 0;
+}
+
+/* Underline From Center */
+.hvr-underline-from-center {
+	display: inline-block;
+	vertical-align: middle;
+	-webkit-transform: translateZ(0);
+	transform: translateZ(0);
+	box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	-moz-osx-font-smoothing: grayscale;
+	position: relative;
+	overflow: hidden;
+}
+.hvr-underline-from-center:before {
+	content: "";
+	position: absolute;
+	z-index: -1;
+	left: 50%;
+	right: 50%;
+	bottom: 0;
+	background: #000000;
+	height: 4px;
+	-webkit-transition-property: left, right;
+	transition-property: left, right;
+	-webkit-transition-duration: 0.3s;
+	transition-duration: 0.3s;
+	-webkit-transition-timing-function: ease-out;
+	transition-timing-function: ease-out;
+}
+.hvr-underline-from-center:hover:before, .hvr-underline-from-center:focus:before, .hvr-underline-from-center:active:before {
+	left: 0;
+	right: 0;
+}

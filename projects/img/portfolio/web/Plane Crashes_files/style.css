@@ -1,0 +1,93 @@
+/*
+references
+http://soqr.fr/testsvg/embed-svg-liquid-layout-responsive-web-design.php
+*/
+
+.my-svg-container{
+
+	border: 1px solid black;
+ /*	display: inline-block;*/
+ 	position: relative;
+ 	/*width: 70%;
+ 	height: 70%;*/
+ 	margin: auto;
+ 	/*padding-bottom: 60%;*/ /* depends on svg ratio, for my zebra height/width = 1.2 so padding-bottom = 50% * 1.2 = 60% */
+ 	/*vertical-align: middle;  top | middle | bottom ... do what you want */
+}
+
+
+.my-svg{ /* svg into : object, img or inline */
+  	display: block;
+  	position: absolute;
+ 	top: 0;
+ 	left: 0;
+  	width: 100%; /* only required for <img /> */
+}
+
+/*--------------index---------------*/
+.axis path {
+	fill : none; 
+	stroke: #000; 
+} 
+.axis line {
+	stroke: #000; 
+	stroke-width: .1em;
+}
+.axis {
+	fill:#000; 
+	font-size: .55em;
+}
+
+.clear{
+	clear: both;
+}
+
+/*--------------cause--------------*/
+
+/*button*/
+.cause-check-status{
+	display: inline-block;
+	float: left;
+}
+.cause-btn{
+	width: 25%;
+	height: 25px;
+	display: inline-block;
+	float: right;
+	vertical-align: middle;
+	margin-right: 25px;
+	margin-top: 10px;
+	padding-left: 10px;
+  	white-space: nowrap;
+  	position: relative;	
+	vertical-align: middle;
+	background: #FEFEFE;
+	opacity: 0.7;
+}
+
+.cause-btn-style{
+	display: inline-block;
+	float: right;
+	margin: 0px 5px;
+	width: 25px;
+	height: 25px;
+	background: none;
+	border: none;
+	background-size: 25px 25px;
+}
+
+#weather-btn{
+	background-image: url("../images/weather.png");
+}
+#criminal-btn{
+	background-image: url("../images/criminal.png");
+}
+#humanerr-btn{
+	background-image: url("../images/human.png");
+}
+#mechanical-btn{
+	background-image: url("../images/mechanical.png");
+}
+#unknown-btn{
+	background-image: url("../images/unknown.png");
+}

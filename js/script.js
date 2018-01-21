@@ -60,6 +60,36 @@ Ajax link page transitions
 
 
 /*-------------------------------------------
+navigation bar
+---------------------------------------------*/
+// $(document).ready(function(){
+//    var str=location.href.toLowerCase();
+//      $('.navigation li a').each(function() {
+//         if (str.indexOf(this.href.toLowerCase()) > -1) {
+//       $("li.active").removeClass("active");
+//                 $(this).parent().addClass("active"); 
+//            }
+//      }); 
+//      $("#slider1").responsiveSlides({
+//         maxwidth: 2500,
+//         speed: 600
+//       });
+
+//      ////scroll effects
+//      $(window).scroll(function() { // check if scroll event happened
+//         if ($(document).scrollTop() > 80) { // check if user scrolled more than 50 from top of the browser window
+//           $(".header").css("background-color", "#f8f8f8"); 
+//           $(".nav-word").css("color", "#000");
+//           // if yes, then change the color of class "navbar-fixed-top" to white (#f8f8f8)
+//         } else {
+//           $(".header").css("background-color", "transparent"); 
+//           $(".nav-word").css("color", "#00B895");
+//           // if not, change it back to transparent
+//         }
+//       });
+
+
+/*-------------------------------------------
 When you click back arrow
 ---------------------------------------------*/
 
@@ -168,7 +198,7 @@ $(document).ready(function(){
 	setTimeout( function(){
 		if($("#site-type").length) {
         $(".typewrite span").typed({
-            strings: ["Zhe Lin", "UI/UX/FrontEnd"],
+            strings: ["UI/UX", "FrontEnd Development"],
             typeSpeed: 100,
             backDelay: 500,
             loop: false,
@@ -241,5 +271,21 @@ function hidePreloader() {
 }
 
 
+/*-------------------------------------------
+Functions Show / scroll effects
+---------------------------------------------*/
+
+////scroll effects
+$(window).scroll(function() { // check if scroll event happened
+  if ($(document).scrollTop() > 500) { // check if user scrolled more than 50 from top of the browser window
+    $(".help-title").css("display", "inline-block"); 
+    // $(".nav-word").css("color", "#000");
+    // if yes, then change the color of class "navbar-fixed-top" to white (#f8f8f8)
+    } else {
+      $(".help-title").css("display", "none"); 
+      // $(".nav-word").css("color", "#00B895");
+      // if not, change it back to transparent
+    }
+});
 
 })//End

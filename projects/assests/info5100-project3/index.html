@@ -1,0 +1,133 @@
+<!-- Ali Soong (acs322), Zhe Lin (zl485), Zhenyi Xia (zx229) -->
+
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<link rel="stylesheet" type="text/css" href="css/style.css">
+
+<!--bootstrap-->
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+<!--javascript-->
+<script src="//d3js.org/d3.v3.min.js"></script>
+<script type="text/javascript" src="js/jquery-2.2.3.js" ></script>
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script> -->
+<script type="text/javascript" src="js/bootstrap.js"></script>
+<script type="text/javascript"  src="js/interact.min.js"></script>
+<script type="text/javascript"  src="data/transportation_data.js"></script>
+<!-- <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.3.0/css/font-awesome.min.css" /> -->
+
+<title>Safest Way to Travel</title>
+</head>
+
+<body>
+  <header>
+    <div class="container">
+
+    </div>
+  </header>
+
+  <!--navigation bar-->
+  <nav class="navbar navbar-default" id = "nav-bar-myreset">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Flight Crash</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li class="active"><a href="#overview">Overview <span class="sr-only">(current)</span></a></li>
+        <li><a href="#causes">Causes</a></li>
+        <li><a href="#phases">Phases</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+<div class="content-container">
+
+    <div class="container">
+      <a name="overview"><h1>Travel by Numbers: Deaths per 1 Billion Miles (2000-2009)</h1></a>
+      <div class="svg-border my-svg-container">
+      <div id="overview"></div>
+        <div>
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+              <h3> Can you figure out which is the safest way to travel? </h3>
+              <p> Below is a graph of the number of deaths per 1 billion passenger miles. Drag and drop the different modes of transportation to try to match them with the correct bar. Check your answers once you've matched them all and see how many you get right! </p>
+          </div>
+          <div id ="clear-padding" class="btn-list btn-list-overview">
+            <div class="col-xs-10 col-sm-10 col-md-10 col-lg-8">
+              <button id="checkAnswers" class="red button">Check Answers</button>
+              <button id="resetAnswers" class="red button" >Reset</button>
+            </div>
+          </div>
+          <p id="message"></p>
+        </div>
+        <div id="transportation"></div>
+        <script type="text/javascript" src="js/overview.js"></script>
+      </div>
+  </div>
+  <br><br>
+
+
+  <div class="container">
+    <a name="causes"><h1>Fatalities by Cause of Plane Crash (1993-2015)</h1></a>
+    <div class="my-svg-container">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <h3> What causes plane crashes? </h3>
+            <p> Click on the icons below to select which types of causes (mechanical, human error, criminal, weather, and unknown) have lead to the most number of fatalities over the years. </p>
+        </div>
+      <div class="btn-list col-xs-10 col-sm-10 col-md-10 col-lg-10">
+        <p class="btn-list-title">Please Select One or More Flight Crash Causes:</p>
+      </div>
+
+      <div id ="clear-padding" class="btn-list btn-list-cause">
+        <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">
+          <input class="cause-btn-style gray button" id="unknown-btn" name="unknown" type="submit" value="">
+          <input class="cause-btn-style blue button" id="weather-btn" name="weather" type="submit" value="">
+          <input class="cause-btn-style red button" id="criminal-btn" name="criminal" type="submit" value="">
+          <input class="cause-btn-style yellow button" id="human-error-btn" name="human-error" type="submit" value="">
+          <input class="cause-btn-style orange button" id="mechanical-btn" name="mechanical" type="submit" value="">
+        </div>
+
+      </div>
+
+      <div id="cause" class="clear my-svg"></div>
+      <script type="text/javascript" src="js/cause.js"></script>
+    </div>
+  </div>
+  <br><br>
+
+  <div class="container">
+    <a name="phases"><h1>Fatalities and Crashes by Flying Phase (1993-2015)</h1></a>
+    <div class="svg-border my-svg-container">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <h3> When are plane crashes most likely to occur? </h3>
+            <p> Click the play button to see the general path a plane takes during the course of a trip and view the total number of fatalities that have occurred in each flying phase from 1993-2015 (x axis = flying phase, y axis = total number of fatalities). Click each bar to see the trend of plane crashes for that phase over the years (x axis = years, y axis = number of crashes). </p>
+        </div>
+        <div id ="clear-padding" class="btn-list">
+          <div class="col-xs-10 col-sm-10 col-md-10 col-lg-8">
+            <input class="blue button" id="play-btn" name="play" type="submit" value="play">
+        </div>
+      </div>
+      <div id="phase" class="clear my-svg"></div>
+      <script type="text/javascript" src="js/phase.js"></script>
+    </div>
+
+  </div>
+</div>
+
+
+</body>
+</html>
