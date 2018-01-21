@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<head>
+    <title>Welcome to Ithaca!</title>
+    <link href="favicon.ico" mce_href="favicon.ico" rel="bookmark" type="image/x-icon" />
+    <link href="favicon.ico" mce_href="favicon.ico" rel="icon" type="image/x-icon" />
+    <link href="favicon.ico" mce_href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <link href="/normalize.com" rel="stylesheet"/>
+    <link href="http://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css"/>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"/>
+    </script>
+	<style>
+    div.footer {
+        background: rgba(203,203,108,.6);
+        height: 120px;
+        border-radius: 12px;
+        margin-right: 15px;
+    }
+    body {
+        font-family: helvetico, sans-serif;
+        background: white;
+        font-size: 17px;
+        line-height: 24px;
+    }
+    a {
+        color: green;
+        text-decoration: underline;
+    }
+    a:hover {
+        color: #33A1c9;
+    }
+
+    div.obj{
+        background-image:url("http://i.imgur.com/wXorzQa.jpg"); 
+        height:350px; 
+        width:100%; 
+        border:0; 
+        border-radius:0; 
+        background-size: cover;
+    }
+    table.head {
+        margin-left: 10px;
+        margin-top: 240px;
+    }
+    img.head {
+        height: 100px;
+    }
+    h1 {
+        margin: 0 auto;
+        padding-bottom: -20px;
+    }
+    ul.bar {
+        margin: 4px 0 0 0;
+        background: rgba(203,203,108,.7);
+        line-height: 60px;
+    }
+    li {
+        display: inline;
+        font-size: 21px;
+        font-family: helvetico, sans-serif;
+    }
+    a.footer {
+        font-size: 16px;
+        text-decoration: underline;
+    }
+    td.visitcenter {
+        background-color: rgba(203,203,108,1);
+    }
+    li.title {
+        color:green;
+    }
+    li.title:hover {
+        color:#33a1c9; 
+        cursor:pointer;
+    }
+    a.title {
+        text-decoration: none;
+    }
+
+    p.index {
+        color: green;
+        margin-top: 10px;
+    }
+    h2 {
+    	margin-bottom: 12px;
+    }
+    a.waterfall {
+    	color: green;
+    	font-size: 22px;
+    	text-align: left;
+    	text-decoration: none;
+    }
+    a.waterfall:hover {
+    	color: #33A1c9;
+    }
+    img.falls {
+    	width: 80px;
+    	height: 80px;
+    	margin: 135px 0 0 235px;
+        border-radius: 10px;
+    }
+    p.location {
+    	margin-top: 10px;
+    	margin-bottom: 0;
+    }
+    a.location {
+        color: green;
+        text-decoration: underline;
+        line-height: 24px;
+        margin-top: 10px;
+        margin-bottom: 0;
+    }
+    a.location:hover {
+        color: #33A1c9;
+    }
+    p.description {
+    	margin-bottom: 0;
+    	margin-top: 0;
+    }
+    div.falls1 {
+    	width: 300px;
+    	height: 200px;
+    	background-image: url("http://i.imgur.com/ALNGyg5.jpg");
+    	border-radius: 10px;
+    	background-size: cover;
+    }
+    div.falls2 {
+    	width: 300px;
+    	height: 200px;
+    	background-image: url("http://i.imgur.com/CqGrdQZ.jpg");
+    	border-radius: 10px;
+    	background-size: cover;
+    }
+    div.falls3 {
+        width: 300px;
+        height: 200px;
+        background-image: url("http://i.imgur.com/mCoXwyp.jpg");
+        border-radius: 10px;
+        background-size: cover;
+    }
+    div.falls4 {
+    	width: 300px;
+    	height: 200px;
+    	background-image: url("http://i.imgur.com/F1mNYPv.jpg");
+    	border-radius: 10px;
+    	background-size: cover;
+    }
+    div.falls5 {
+        width: 300px;
+        height: 200px;
+        background-image: url("http://i.imgur.com/SZrD4O7.jpg");
+        border-radius: 10px;
+        background-size: cover;
+    }
+    div.falls6 {
+    	width: 300px;
+    	height: 200px;
+    	background-image: url("http://i.imgur.com/0N3k77J.jpg");
+    	border-radius: 10px;
+    	background-size: cover;
+    }
+
+    li.footer {
+        display: inline;
+        padding: 0 12px 0 12px;
+        color: green;
+        text-decoration: underline;
+        margin: 0 auto;
+        font-size: 17px;
+    }
+    li.footer:hover {
+        color: #33A1c9;
+        cursor: pointer;
+    }
+    p.footer {
+        margin-top: 8px;
+        line-height: 22px;
+        text-align: center;
+    }
+    div.contact {
+        width: 160px; height: 47px; border-radius: 8px; position:fixed; right: 20px;  bottom: 5px; margin-bottom:0; border: 0; cursor: pointer;}
+    p.contact {
+        font-size:19px; color: white; text-align: center; background-color: rgba(57,102,57,.9); margin-bottom: 5px;
+    }
+    small.contact {
+        opacity: 0;
+    }
+    .show-description p.contact {
+        height: 180px; 
+        width: 240px;
+        position: fixed; 
+        bottom: 5px;
+        right: 20px;
+        background: white;
+        color: green;
+        line-height: 18px;
+        border-radius: 8px;
+        border: 2px solid rgba(57,102,57,.9);
+    }
+    .show-description small.contact {
+        opacity: 1;
+        color: black; font-size:16px;
+    }
+    .show-description input[type="Information"] {
+        float: center;
+        font-size: 16px;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="obj">
+        <table class="head" align="left">
+            <tr>
+                <td>
+                    <img class="head" src="http://i.imgur.com/NBEhIqA.gif"/>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <ul class="bar">
+        <table align="center" rules="cols" frame="void" border="4" bordercolor="white" cols="5" cellspacing="5">
+            <tr>
+                <td width="160" align="center">
+                    <li class="title"><a class="title" href="Visitithaca.html?id=home_page">Home</a></li>
+                </td>
+                <td width="160" align="center">
+                    <li class="title"><a class="title" href="Visitithaca.html?id=activities_page">Things to Do</a></li>
+                </td>
+                <td width="160" align="center">
+                    <li class="title"><a class="title" href="Visitithaca.html?id=accommodation_page">Places to Stay</a></li>
+                </td>
+                <td width="160" align="center">
+                    <li class="title"><a class="title" href="Visitithaca.html?id=trip_plan_page">Plan Your Trip</a></li>
+                </td>
+                <td class="visitcenter" width="160" align="center">
+                    <li class="title"><a class="title" href="Visitithaca.html?id=visitor_center_page">Visitor Center</a></li>
+                </td>
+            </tr>
+        </table>
+    </ul>
+
+
+    <p class="index"><span><a href="Visitithaca.html?id=home_page">Visit Ithaca</a></span>--><span><a id="2" href="Visitithaca.html?id=activities_page">Things to Do</a></span>--><span><a href="Waterfalls.html">Waterfalls &amp; Gorges</a></span></p>
+    <table align="center" cellspacing="50">
+        <tr>
+    		<td>
+    			<div class="falls1">
+    				<a href="https://www.google.com/maps/place/Ithaca+Falls,+Ithaca,+NY/@42.4525496,-76.4930874,17z/data=!3m1!4b1!4m2!3m1!1s0x89d082287b62f495:0x2bc457fe60afa0c0"><img class="falls" src="http://i.imgur.com/aBdnIpJ.png"/></a>
+    			</div>
+    		</td>
+    		<td width="600">
+    			<h2><a class="waterfall" href="#">Ithaca Falls on Fall Creek</a></h2>
+    			<p class="description">Experience one of Ithaca's secret waterfalls this summer, a great place to stop and enjoy a picnic lunch or just relax with a good book! With a 150ft cascading fall, watch Fall Creek's final plunge to Cayuga Lake.</p>
+    			<p class="location">Location: <span><a class="location" href="https://www.google.com/maps/place/Ithaca+Falls,+Ithaca,+NY/@42.4525496,-76.4930874,17z/data=!3m1!4b1!4m2!3m1!1s0x89d082287b62f495:0x2bc457fe60afa0c0">Lake St., Ithaca, NY 14850</a></span></p>
+    			<p class="description">Phone: 607-272-1313</br>Open time: The trail is open year-round.</br>Difficulty: Easy</p>
+    		</td>
+    	</tr>
+        <tr>
+            <td>
+                <div class="falls2">
+                    <a href="https://www.google.com/maps/place/Taughannock+Falls+State+Park/@42.5374295,-76.612311,17z/data=!4m2!3m1!1s0x89d0854909e138e3:0x6f8b9e8b900d973b"><img class="falls" src="http://i.imgur.com/xiX3S6q.png"/></a>
+                </div>
+            </td>
+            <td width="600">
+                <h2><a class="waterfall" href="Taughannock Falls.html">Taughannock Falls State Park</a></h2>
+                <p class="description">Taughannock falls carves a 400ft deep gorge through layers of sandstone, shale and limestone that were once the bed of an ancient sea. With a 215 foot plunge, this waterfall stands three stories taller than Niagara Falls.</p>
+                <p class="location">Location: <span><a class="location" href="https://www.google.com/maps/place/Taughannock+Falls+State+Park/@42.5374295,-76.612311,17z/data=!4m2!3m1!1s0x89d0854909e138e3:0x6f8b9e8b900d973b">1740 Taughannock Blvd., (Rt 89), Trumansburg, NY 14886</a></span></p>
+                <p class="description">Phone: 607-387-6739</br>Open time: Gorge trail and overlook open year-round. Others open April-Oct.</br>Difficulty: Moderate</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="falls3">
+                    <a href="https://www.google.com/maps/place/Robert+H.+Treman+State+Park/@42.39891,-76.568096,17z/data=!3m1!4b1!4m2!3m1!1s0x89d08740e554f5a7:0xd31752fb7d06305c"><img class="falls" src="http://i.imgur.com/qbMlhe6.png"/></a>
+                </div>
+            </td>
+            <td width="600">
+                <h2><a class="waterfall" href="#">Robert H. Treman State Park</a></h2>
+                <p class="description">Buttermilk Creek descends more than 500 feet in a series of cascades and rapids. A natural pool at the base of Buttermilk Falls provides swimming with the feel of an old swimming hole.</p>
+                <p class="location">Location: <span><a class="location" href="https://www.google.com/maps/place/Robert+H.+Treman+State+Park/@42.39891,-76.568096,17z/data=!3m1!4b1!4m2!3m1!1s0x89d08740e554f5a7:0xd31752fb7d06305c">Rte 327, RD 10 Ithaca, NY 14850</a></span></p>
+                <p class="description">Phone: 607-273-5761</br>Difficulty: Easy to Difficult</p>
+            </td>
+        </tr>
+    	<tr>
+    		<td>
+    			<div class="falls4">
+    				<a href="https://www.google.com/maps/place/Six+Mile+Creek+Vineyard/@42.417729,-76.454565,17z/data=!3m1!4b1!4m2!3m1!1s0x89da7f62d27457cf:0x82119cc9a7b9b4e2"><img class="falls" src="http://i.imgur.com/Qrip7cZ.png"/></a>
+    			</div>
+    		</td>
+    		<td width="600">
+    			<h2><a class="waterfall" href="#">Businessman's Lunch Falls on Six Mile Creek</a></h2>
+    			<p class="description">Businessman's Lunch Fallls is a set of four cascading falls - 30ft, 5ft, 15ft, 15f - and is popular lunch spot for downtown office workers.</p>
+    			<p class="location">Location: <span><a class="location" href="https://www.google.com/maps/place/Six+Mile+Creek+Vineyard/@42.417729,-76.454565,17z/data=!3m1!4b1!4m2!3m1!1s0x89da7f62d27457cf:0x82119cc9a7b9b4e2">Giles St., Ithaca, NY 14850</a></span></p>
+    			<p class="description">Open time: Open year round, but often impassible in winter due to ice.</br>Difficulty: Easy</p>
+    		</td>
+    	</tr>
+        <tr>
+            <td>
+                <div class="falls5">
+                    <a href="https://www.google.com/maps/place/Lower+Buttermilk+Falls+State+Park+Entrance/@42.417229,-76.521119,14z/data=!4m2!3m1!1s0x89d0811e696c99e1:0x13b98adb49c0f4c7"><img class="falls" src="http://i.imgur.com/FpkOSyX.png"/></a>
+                </div>
+            </td>
+            <td width="600">
+                <h2><a class="waterfall" href="#">Buttermilk Falls State Park</a></h2>
+                <p class="description">The park features six trails with spectacular rocky gorges and wooded sections. A three mile section of the Finger Lakes Trail goes through the park.</p>
+                <p class="location">Location: <span><a class="location" href="https://www.google.com/maps/place/Lower+Buttermilk+Falls+State+Park+Entrance/@42.417229,-76.521119,14z/data=!4m2!3m1!1s0x89d0811e696c99e1:0x13b98adb49c0f4c7">112 E. Buttermilk Falls Rd., off Rt 13 S, Ithaca, NY 14850</a></span></p>
+                <p class="description">Phone: 607-273-3440</br>Open time: Falls view open year round. Trails open April-Oct.</br>Difficulty: Moderate</p>
+            </td>
+        </tr>
+    	<tr>
+    		<td>
+    			<div class="falls6">
+    				<a href="https://www.google.com/maps/place/Salmon+Creek+Rd,+Lansing,+NY+14882/@42.5896816,-76.5325539,17z/data=!3m1!4b1!4m2!3m1!1s0x89d09c639a2eb9bb:0x22640cf0f63fe01a"><img class="falls" src="http://i.imgur.com/nMrmGgs.png"/></a>
+    			</div>
+    		</td>
+    		<td width="600">
+    			<h2><a class="waterfall" href="#">Ludlowville Falls on Salmon Creek</a></h2>
+    			<p class="description">Salmon Creek pours over a hard limestone cap to form beautiful Ludlowville Falls. The soft shale underneath has eroded away, creating an overhang cave and deep plunge pool. </p>
+    			<p class="location">Location: <span><a class="location" href="https://www.google.com/maps/place/Salmon+Creek+Rd,+Lansing,+NY+14882/@42.5896816,-76.5325539,17z/data=!3m1!4b1!4m2!3m1!1s0x89d09c639a2eb9bb:0x22640cf0f63fe01a">Salmon Creek Rd., Lansing, NY 14882</a></span></p>
+    			<p class="description">Open time: Falls overlook open year round. Trails closed in winter.<br>Difficulty: Easy</p>
+    		</td>
+    	</tr>
+    </table> 
+       
+	<div class="footer">
+    	<table align="center">
+        	<tr>
+            	<td>
+                	<li class="footer"><a href="Visitithaca.html?id=home_page">Home</a></li>  
+            	</td>
+            	<td>                
+                	<li class="footer"><a href="Visitithaca.html?id=activities_page">Things to Do</a></li>
+            	</td>
+            	<td>
+                	<li class="footer"><a href="Visitithaca.html?id=accommodation_page">Places to Stay</a></li>
+            	</td>
+            	<td>
+                	<li class="footer"><a href="Visitithaca.html?id=trip_plan_page">Plan Your Trip</a></li>
+            	</td>
+            	<td>
+            		<li class="footer"><a href="Visitithaca.html?id=visitor_center_page">Visitor Center</a></li>
+            	</td>
+        	</tr>
+    	</table>
+    	<p class="footer">
+        	Ithaca/Tompkins County Convention &amp; Visitors Bureau<br/>
+        	904 East Shore Drive, Ithaca, NY 14850<br/>
+        	Phone: (607) 272-1313 | Toll Free: (800)-28-ITHACA    
+    	</p>
+	</div>
+
+    <!--Contact Us-->  
+    <div class="contact">
+        <p class="contact">Chat with Us<br/>
+        <small class="contact">We're not around, but we'd like to chat with you and reply soon.
+        <span class="information">
+        <input type="Information" placeholder="Type your name"/>
+        <input type="Information" placeholder="Type your email"/>
+        <input type="information" placeholder="Leave us a note"/>
+        </small>
+        </p>
+    </div>
+    <script>
+        $("div.contact").on("click", function() {
+        $(this).toggleClass("show-description");
+        });
+    </script> 
+</body>
+</html>

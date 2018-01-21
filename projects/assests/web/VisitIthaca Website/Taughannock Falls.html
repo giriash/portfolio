@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<head>
+    <title>Welcome to Ithaca!</title>
+    <link href="favicon.ico" mce_href="favicon.ico" rel="bookmark" type="image/x-icon" />
+    <link href="favicon.ico" mce_href="favicon.ico" rel="icon" type="image/x-icon" />
+    <link href="favicon.ico" mce_href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <link href="/normalize.com" rel="stylesheet"/>
+    <link href="http://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css"/>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"/>
+    </script>
+	<style>
+    div.footer {
+        background: rgba(203,203,108,.6);
+        height: 120px;
+        border-radius: 12px;
+        margin-right: 15px;
+    }
+    body {
+        font-family: helvetico, sans-serif;
+        background: white;
+        font-size: 17px;
+        line-height: 24px;
+    }
+    a {
+        color: green;
+        text-decoration: underline;
+    }
+    a:hover {
+        color: #33A1c9;
+    }
+    div.obj{
+        background-image:url("http://i.imgur.com/wXorzQa.jpg"); 
+        height:350px; 
+        width:100%; 
+        border:0; 
+        border-radius:0; 
+        background-size: cover;
+    }
+    table.head {
+        margin-left: 10px;
+        margin-top: 240px;
+    }
+    img.head {
+        height: 100px;
+    }
+    h1 {
+        margin: 0 auto;
+        padding-bottom: -20px;
+    }
+    ul.bar {
+        margin: 4px 0 0 0;
+        background: rgba(203,203,108,.7);
+        line-height: 60px;
+    }
+    li {
+        display: inline;
+        font-size: 21px;
+        font-family: helvetico, sans-serif;
+    }
+    a.title {
+        text-decoration: none;
+    }
+    a.footer {
+        font-size: 16px;
+        text-decoration: underline;
+    }
+    td.visitcenter {
+        background-color: rgba(203,203,108,1);
+    }
+    li.title {
+        color:green;
+    }
+    li.title:hover {
+        color:#33a1c9; 
+        cursor:pointer;
+    }
+
+    p.index {
+        color: green;
+        margin-top: 10px;
+    }
+    h2 {
+        color: green;
+        font-size: 22px;
+        margin-bottom: -10px;
+        margin-top: 50px;
+        text-align: center;
+        padding-right: 650px;
+    }
+    div.fallpicture {
+        background-image: url("http://i.imgur.com/GVRReyc.jpg");
+        background-size: cover;
+        width: 600px;
+        height: 400px;
+        border-radius: 8px;
+    }
+    p.picname {
+        font-size: 21px;
+        line-height: 30px;
+        padding: 0 10px 0 15px;
+        color: white;
+        background-color: rgba(02,102,22,.7);
+        position: absolute;
+        margin-top: 350px;
+        margin-left:-12px;
+    }
+    div.smallpic1 {
+        background-image: url("http://i.imgur.com/b1Hgr7o.jpg");
+        background-size: cover;
+        width: 296px;
+        height: 222px;
+        border-radius: 6px;
+    }
+    div.smallpic2 {
+        background-image: url("http://i.imgur.com/QozfwCF.jpg");
+        background-size: cover;
+        width: 296px;
+        height: 222px;
+        border-radius: 6px;
+    }
+    p.head {
+        color: green;
+        font-size: 20px;
+        margin-top: 0;
+        margin-bottom: 5px;
+    }
+    img.recommend {
+        width: 300px;
+        height: 200px;
+        border-radius: 8px;
+    }
+    a.head {
+        color: green;
+        text-decoration: none;
+        font-size: 20px;
+    }
+    a.head:hover {
+        color: #33A1c9;
+    }
+
+    li.footer {
+        display: inline;
+        padding: 0 12px 0 12px;
+        color: green;
+        text-decoration: underline;
+        margin: 0 auto;
+        font-size: 17px;
+    }
+    li.footer:hover {
+        color: #33A1c9;
+        cursor: pointer;
+    }
+    p.footer {
+        margin-top: 8px;
+        line-height: 22px;
+        text-align: center;
+    }
+    div.contact {
+        width: 160px; height: 47px; border-radius: 8px; position:fixed; right: 20px;  bottom: 5px; margin-bottom:0; border: 0; cursor: pointer;}
+    p.contact {
+        font-size:19px; color: white; text-align: center; background-color: rgba(57,102,57,.9); margin-bottom: 5px;
+    }
+    small.contact {
+        opacity: 0;
+    }
+    .show-description p.contact {
+        height: 180px; 
+        width: 240px;
+        position: fixed; 
+        bottom: 5px;
+        right: 20px;
+        background: white;
+        color: green;
+        line-height: 18px;
+        border-radius: 8px;
+        border: 2px solid rgba(57,102,57,.9);
+    }
+    .show-description small.contact {
+        opacity: 1;
+        color: black; font-size:16px;
+    }
+    .show-description input[type="Information"] {
+        float: center;
+        font-size: 16px;
+    }
+    </style>
+</head>
+
+<body>
+    <div class="obj">
+        <table class="head" align="left">
+            <tr>
+                <td>
+                    <img class="head" src="http://i.imgur.com/NBEhIqA.gif"/>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    <ul class="bar">
+        <table align="center" rules="cols" frame="void" border="4" bordercolor="white" cols="5" cellspacing="5">
+            <tr>
+                <td width="160" align="center">
+                    <li class="title"><a class="title" href="Visitithaca.html?id=home_page">Home</a></li>
+                </td>
+                <td width="160" align="center">
+                    <li class="title"><a class="title" href="Visitithaca.html?id=activities_page">Things to Do</a></li>
+                </td>
+                <td width="160" align="center">
+                    <li class="title"><a class="title" href="Visitithaca.html?id=accommodation_page">Places to Stay</a></li>
+                </td>
+                <td width="160" align="center">
+                    <li class="title"><a class="title" href="Visitithaca.html?id=trip_plan_page">Plan Your Trip</a></li>
+                </td>
+                <td class="visitcenter" width="160" align="center">
+                    <li class="title"><a class="title" href="Visitithaca.html?id=visitor_center_page">Visitor Center</a></li>
+                </td>
+            </tr>
+        </table>
+    </ul>
+
+    <p class="index"><span><a href="Visitithaca.html?id=home_page">Visit Ithaca</a></span>--><span><a href="Visitithaca.html?id=activities_page">Things to Do</a></span>--><span><a href="Waterfalls.html">Waterfalls &amp; Gorges</a></span>--><span><a href="Taughannock Falls.html">Taughannock Falls State Park</a></span></p>
+    <H2>Taughannock Falls State Park</H2>
+    <table align="center" cellspacing="30">
+        <tr>
+            <td rowspan="2">
+                <table cellspacing="5">
+                    <tr>
+                        <td colspan="2">
+                            <div class="fallpicture">
+                                <p class="picname">Taughannock Falls State Park</p>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="smallpic1">
+                            </div>
+                        </td>
+                        <td>
+                            <div class="smallpic2">
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+            <td width="300" height="200">
+                    <a href="http://www.visitithaca.com/files/TaughannockFallsStatePark.pdf"><img src="http://i.imgur.com/r604vL9.png" width="350" height="200"></a>
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td width="350">
+                <p class="head">Directions:</p>
+                <p>Take Rt. 89 north 8mi to Taughannock Falls State Park. The gorge and hiking trails are on your left. For an easier view, turn left on Taughannock Park Road and follow the signs to the overlook above the falls.
+                </p>
+                <p class="location">Location:<br/><span><a class="location" href="https://www.google.com/maps/place/Taughannock+Falls+State+Park/@42.5374295,-76.612311,17z/data=!4m2!3m1!1s0x89d0854909e138e3:0x6f8b9e8b900d973b">1740 Taughannock Blvd., (Rt 89), Trumansburg, NY 14886</a></span></p>
+                <p class="description">Phone: 607-387-6739
+                </p>
+            </td>
+        </tr>
+        <tr>
+            <td width="600">
+                <p class="head">Fun Facts:</p>
+                <P>Pronounced Tuh-GA-nick. The falls' name is believed derived from the Algonquian Taconic ("in the trees") or Taghkanic (after a Lenape chieftain killed in battle nearby). Taughannock falls carves a 400ft deep gorge through layers of sandstone, shale and limestone that were once the bed of an ancient sea. With a 215 foot plunge, this waterfall stands three stories taller than Niagara Falls.<br/>Enjoy swimming in Cayuga Lake, a picnic area, concessions, a playground, camping, cabins and more! There is a marina offering parking for 25 rigs, a concession stand, and a protected harbor.</P>
+            </td>
+            <td width="350" valign="top">
+                <p class="head">Trail Information</p>
+                <p>There are multiple hiking trails that provide views of the fall and the gorge:<br/><span style="color:green;">Gorge Trail:</span> 0.75mi along Taughannock Creek to the base of the falls. Easy<br/><span style="color:green;">South Rim Trail:</span> 1.125mi. Moderate<br/><span style="color:green;">North Rim Trail:</span> 1.5mi. Moderate<br/>Gorge trail and overlook open year round. Other trails open April-Oct.
+                </p>
+            </td>
+        </tr>
+    </table>
+
+    <h2>What you might like</h2>
+    <table align="center" cellspacing="50">
+        <tr>
+            <td>
+                <a href=""><img class="recommend" src="http://i.imgur.com/mCoXwyp.jpg"/></br></a>
+                <a href="#" class="head">Robert H. Treman State Park</a>
+            </td>
+            <td>
+                <a href=""><img class="recommend" src="http://i.imgur.com/0N3k77J.jpg"></br></a>
+                <a href="#" class="head">Ludlowville Falls on Salmon Creek</a>
+            </td>
+            <td>
+                <a href=""><img class="recommend" src="http://i.imgur.com/SZrD4O7.jpg"></br></a>
+                <a href="#" class="head">Buttermilk Falls State Park</a>
+            </td>
+        </tr>
+    </table>
+
+    <div class="footer">
+        <table align="center">
+            <tr>
+                <td>
+                    <li class="footer"><a href="visitithaca.html?id=home_page">Home</a></li>  
+                </td>
+                <td>                
+                    <li class="footer"><a href="visitithaca.html?id=activities_page">Things to Do</a></li>
+                </td>
+                <td>
+                    <li class="footer"><a href="visitithaca.html?id=accommodation_page">Places to Stay</a></li>
+                </td>
+                <td>
+                    <li class="footer"><a href="visitithaca.html?id=trip_plan_page">Plan Your Trip</a></li>
+                </td>
+                <td>
+                    <li class="footer"><a href="visitithaca.html?id=visitor_center_page">Visitor Center</a></li>
+                </td>
+            </tr>
+        </table>
+        <p class="footer">
+            Ithaca/Tompkins County Convention &amp; Visitors Bureau<br/>
+            904 East Shore Drive, Ithaca, NY 14850<br/>
+            Phone: (607) 272-1313 | Toll Free: (800)-28-ITHACA    
+        </p>
+    </div>
+
+    <!--Contact Us-->  
+    <div class="contact">
+        <p class="contact">Chat with Us<br/>
+        <small class="contact">We're not around, but we'd like to chat with you and reply soon.
+        <span class="information">
+        <input type="Information" placeholder="Type your name"/>
+        <input type="Information" placeholder="Type your email"/>
+        <input type="information" placeholder="Leave us a note"/>
+        </small>
+        </p>
+    </div>
+    <script>
+        $("div.contact").on("click", function() {
+        $(this).toggleClass("show-description");
+        });
+    </script> 
+</body>
+</html>

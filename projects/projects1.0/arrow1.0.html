@@ -1,0 +1,163 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+
+  <meta charset="utf-8">
+  <title>CornellMenU</title>
+  <meta name="description" content="Cornellmenu">
+  <meta name="keywords" content="Gravity, simplicity, theme, html5, single page, boxed portfolio">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="author" content="zhelindaisy.com">
+  <link rel="icon" type="image/png" href="img/icon.png" />
+
+<!--Style-->
+
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/style-responsive.css">
+  <link rel="stylesheet" type="text/css" href="../css/myreset.css">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+ 
+  <!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  
+</head>
+
+<body>
+
+
+  <!--Header-->
+<header  id="header-white" class="boxed">
+  <div class="header-margin">
+    <div class="logo" id="name"><a href="../index.html">Zhe Lin</a></div>
+    <ul class="header-nav" id="sub-header">
+      <!--li><a href="../index.html#about">About</a></li-->
+      <li><a href="../index.html#projects">Projects</a></li>
+      <li><a href="../img/resume.pdf">Resume</a></li>
+      <li><a href="../index.html#contact">Contact</a></li>
+    </ul>
+  </div>
+</header>
+  <div class="clear"></div>
+  <!--Content-->
+
+  <div class="content" id="ajax-content">
+    <div class="text-intro">
+        <!-- <hr style=" position:fixed; height:3px; width:1000px ; margin-top:-70px; border:none;border-top:3px solid #E1BEE8;" /> -->
+        <hr class = 'hr_style common_grey' />
+          <h1>Arrow - MOBILE APP</h1>
+            <div class="one-column">
+              <a id="myrole-arrow" class="myrole" href="#" onmouseover="displayRole()" onmouseout="disappearRole()"> <br><br>My Role: </a>
+              <div id="roles-arrow" class="roles" onmouseover="dispalyRole()" onmouseout="disappearRole()">Visual/UI Design<br/> UX Design <br/> Prototyping </div>
+              <a id="team-arrow" class="team" href="#" onmouseover="displayTeam()" onmouseout="disappearTeam()"> <br><br>Team Members: </a>
+              <div id="members-arrow" class="members" onmouseover="displayTeam()" onmouseout="disappearTeam()">Other team members: <br>Alexander Panos<br>software engineering team memners<br></div>
+            </div>
+            <div class="two-column">
+                <p>Arrow is a mobile app for Android and iOS that allows you to keep track of where your friends are on beautiful, custom venue maps through GPS. Built for music festivals, users create a group “Bubble”, and add their friends. Arrow helps users easily navigate through the chaos and find their friends through the use of a compass “Arrow”. Users can also message their Bubble, individual friends, and take photos/videos which appear on the map and on a media stream. Custom venue maps for music festivals also show stage/vendor/medical tent locations, notify users when an artist is about to perform (along with other important info), and allow the user to ping exact GPS location to venue staff in event of an emergency.
+                </p>
+            </div>
+                <div class="clear"></div>             
+                                
+            <div id="content">
+              <div id="prototype" class="subtitle">
+                    <h3>Design output</h3>
+                    <h4 id="arrowtitlefont">Iteration 1 (Previous version)</h4>
+                    <div class="subcontent">
+                      <img src="img/portfolio/arrow/iteration1.png" width="100%" style="padding-left:0px;">
+                    </div>
+                    <h4 id="arrowtitlefont">Iteration 2</h4>
+                    <div class="subcontent">
+                      <img src="img/portfolio/arrow/iteration2.png" width="100%" style="padding-left:0px;">
+                    </div>
+                    <h4 id="arrowtitlefont">Iteration 3</h4>
+                    <div class="subcontent">
+                      <img src="img/portfolio/arrow/iteration3.png" width="100%" style="padding-left:0px;">
+                    </div>
+                    <h4 id="arrowtitlefont">Final Version:</h4>
+                    <h5 id="center">coming soon</h5>
+
+                  </div>
+            </div>
+        
+        
+            <div class="prev-next">
+              <div class="prev-button"><a class= "hvr-underline-from-left" href="web.html">Previous work</a></div>
+              <div class="next-button"><a class= "hvr-underline-from-left" href="mybehaviorCBP.html">Next work</a></div>
+            </div>
+    </div>
+        
+  </div>
+
+
+
+  <!--Home Sidebar-->
+
+<div id="ajax-sidebar"></div>
+
+
+  <!--Footer-->
+
+  <footer>
+
+    <div class="footer-margin">
+      <div class="social-footer">
+        <a href="https://www.linkedin.com/in/zhe-lin-443850103"><i class="fa fa-linkedin"></i></a>
+        <a href="https://www.behance.net/daisyzhelin"><i class="fa fa-behance"></i></a>
+      
+      </div>     
+      <div class="copyright">© Copyright 2015 Zhe Lin. All Rights Reserved.</div>
+      
+
+    
+    </div>
+
+
+  </footer>
+
+
+
+<!--Scripts-->
+
+  <script src="../js/jquery.min.js"></script>
+  <script src="../js/jquery.easing.min.js"></script>
+  <script src="../js/modernizr.custom.42534.js" type="text/javascript"></script>
+  <script src="../js/jquery.waitforimages.js" type="text/javascript"></script>
+  <script src="../js/typed.js" type="text/javascript"></script>
+  <script src="../js/masonry.pkgd.min.js" type="text/javascript"></script>
+  <script src="../js/imagesloaded.pkgd.min.js" type="text/javascript"></script>
+  <script src="../js/jquery.jkit.1.2.16.min.js"></script>
+ 
+  <script src="../js/script.js" type="text/javascript"></script>
+  
+  <script>
+    $('#button, #buttons').on('click', function() {
+      $( ".opacity-nav" ).fadeToggle( "slow", "linear" );
+    // Animation complete.
+    });
+  </script>
+
+  <script type="text/javascript" language="javascript">
+    function displayRole(){
+      document.getElementById("roles-arrow").style.display="block";
+    }
+    function disappearRole(){
+      document.getElementById("roles-arrow").style.display="none";
+    }
+    function displayTeam(){
+      document.getElementById("members-arrow").style.display="block";
+    }
+    function disappearTeam(){
+      document.getElementById("members-arrow").style.display="none";
+    }
+  </script>
+   <!--script>
+  $( document ).click(function() {
+    $( ".one-column" ).effect( "bounce", "slow" );
+  });
+  </script-->
+
+
+</body>
+</html>

@@ -1,0 +1,402 @@
+/*
+references
+http://soqr.fr/testsvg/embed-svg-liquid-layout-responsive-web-design.php
+*/
+
+body{
+	background-color: #222222;
+}
+a h1{
+	color: #666;
+	text-align: center;
+	margin-top: 20px;
+}
+
+.my-svg-container{
+	background-color: #efefef;
+	/*border: 1px solid black;*/
+ 	position: relative;
+ 	/*width: 70%;
+ 	height: 70%;*/
+ 	margin: auto;
+ 	padding: 20px 0px;
+}
+
+
+.my-svg{ /* svg into : object, img or inline */
+  	text-align: center;
+
+}
+
+#clear-padding{
+	padding: 0px;
+}
+
+/*--------------index---------------*/
+.axis path {
+	fill : none;
+	stroke: #000;
+}
+.axis line {
+	stroke: #000;
+	stroke-width: .1em;
+}
+.axis {
+	fill:#000;
+	font-size: .55em;
+}
+
+.clear{
+	clear: both;
+}
+
+.content-container{
+	margin-top: 50px;
+	background-color: #fff;
+}
+
+#nav-bar-myreset{
+	position: fixed;
+	width: 100%;
+	z-index: 999;
+	margin-bottom: 50px;
+}
+
+/*--------------cause--------------*/
+
+/*button*/
+.cause-check-status{
+	display: inline-block;
+	float: left;
+}
+.btn-list{
+	clear: both;
+	color: #000;
+	height: auto;
+	display: inline-block;
+	float: left;
+	vertical-align: middle;
+	margin-right: 10%;
+	margin-top: 0%;
+  	white-space: nowrap;
+  	position: relative;
+	vertical-align: middle;
+
+	background-color: #efefef;
+	/*background: #3C4044;*/
+}
+.btn-list-overview{
+	display: inline-block;
+	float: left;
+	width: 10%;
+}
+.btn-list-cause{
+	width: 40%;
+}
+.btn-list-title{
+	color: #afafaf;
+	display: inline-block;
+	float: left;
+	font-size: 12px;
+}
+
+.cause-btn-style{
+	display: inline-block;
+	float: right;
+	background: none;
+	border: none;
+
+}
+
+#cause svg {
+	max-width: 100%;
+}
+
+#weather-btn{
+	background-image: url("../images/weather.png");
+}
+#criminal-btn{
+	background-image: url("../images/criminal.png");
+}
+#human-error-btn{
+	background-image: url("../images/human.png");
+}
+#mechanical-btn{
+	background-image: url("../images/mechanical.png");
+}
+#unknown-btn{
+	background-image: url("../images/unknown.png");
+}
+
+.airlinepath{
+  visibility: hidden;
+  fill:none;
+}
+
+
+.criminal_style{
+	fill: #D75F27;
+}/*criminal*/
+.human_style{
+	fill: #FECD08;
+}/*human*/
+.mechanical_style{
+	fill: #FEAD43;
+}/*mechanical*/
+.unknown_style{
+	fill: #D8D8D8;
+}/*unknown*/
+.weather_style{
+	fill: #34C2E3;
+}
+.replace_style{
+	fill: #ffffff;
+}
+
+.cause-tag1{
+	font-size: 9px;
+	fill: #D8D8D8;
+}
+.cause-tag2{
+	font-size: 9px;
+	fill: #34C2E3;
+}
+.cause-tag3{
+	font-size: 9px;
+	fill: #D75F27;
+}
+.cause-tag4{
+	font-size: 9px;
+	fill: #FECD08;
+}
+.cause-tag5{
+	font-size: 9px;
+	fill: #FEAD43;
+}
+/*--------------transportation---------------*/
+#transportation {
+	margin: 10px auto;
+	width: 95%;
+	height: 60%;
+}
+
+#transportation svg {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+#transportation .bar {
+	fill: #9D1134;
+}
+
+#transportation .dropzone {
+	stroke-width: 2px;
+	stroke: gray;
+	fill: #dfdfdf;
+}
+
+#transportation .dropzone.drop-active {
+	stroke: gray;
+	stroke-width: 2px;
+}
+
+#transportation .dropzone.drop-target {
+	fill: gray;
+}
+
+#transportation .correctLabel {
+	fill: darkgreen;
+}
+#transportation .correctLabel.hidden {
+	display: none;
+}
+
+#transportation .draggable rect {
+	fill: #ffffff;
+	stroke: #000000;
+
+}
+#transportation .draggable.correct rect {
+	fill: #C1DD52;
+}
+#transportation .draggable.incorrect rect {
+	fill: #CB2828;
+}
+
+#transportation .draggable text {
+	text-anchor: middle;
+}
+
+#message {
+	height: 2em;
+	display: inline-block;
+	float: left;
+}
+
+
+
+.Train {
+	background-image: url("../images/overview/train.png");
+	color: red;
+
+}
+
+.Bus{
+
+}
+
+.Ferry{
+
+}
+
+.Airplane{
+
+}
+
+.Subway{
+
+}
+
+.Car{
+
+}
+
+/*--------button effect------------*/
+/* references from http://zurb.com/playground/radioactive-buttons*/
+
+
+@-webkit-keyframes orangePulse {
+  from { background-color: #FEAD43; -webkit-box-shadow: 0 0 9px #333; }
+  80% { background-color: #FFBE66; -webkit-box-shadow: 0 0 18px #FFBE66; }
+  to { background-color: #FEAD43; -webkit-box-shadow: 0 0 9px #333; }
+}
+
+@-webkit-keyframes redPulse {
+  from { background-color: #9D1134; -webkit-box-shadow: 0 0 9px #333; }
+  50% { background-color: #C1264D; -webkit-box-shadow: 0 0 18px #C1264D; }
+  to { background-color: #9D1134; -webkit-box-shadow: 0 0 9px #333; }
+}
+
+@-webkit-keyframes yellowPulse {
+  from { background-color: #FECD08; -webkit-box-shadow: 0 0 9px #333; }
+  80% { background-color: #FFE167; -webkit-box-shadow: 0 0 18px #FFE167; }
+  to { background-color: #FECD08; -webkit-box-shadow: 0 0 9px #333; }
+}
+
+@-webkit-keyframes bluePulse {
+  from { background-color: #34C2E3; -webkit-box-shadow: 0 0 9px #333; }
+  80% { background-color: #5ACFEA; -webkit-box-shadow: 0 0 18px #5ACFEA; }
+  to { background-color: #34C2E3; -webkit-box-shadow: 0 0 9px #333; }
+}
+
+@-webkit-keyframes grayPulse {
+  from { background-color: #D8D8D8; -webkit-box-shadow: 0 0 9px #333; }
+  80% { background-color: #DFDFDF; -webkit-box-shadow: 0 0 18px #DFDFDF; }
+  to { background-color: #D8D8D8; -webkit-box-shadow: 0 0 9px #333; }
+}
+
+.red.button {
+  -webkit-animation-name: redPulse;
+  -webkit-animation-duration: 4s;
+  -webkit-animation-iteration-count: infinite;
+  background-color: #C1264D;
+  border-radius: 10px;
+  border: none;
+  color: #fff;
+  opacity: .8;
+}
+
+.orange.button {
+  -webkit-animation-name: orangePulse;
+  -webkit-animation-duration: 4s;
+  -webkit-animation-iteration-count: infinite;
+  background-color: #FEAD43;
+  border-radius: 10px;
+  border: none;
+  color: #fff;
+  opacity: .8;
+}
+
+.yellow.button {
+  -webkit-animation-name: yellowPulse;
+  -webkit-animation-duration: 4s;
+  -webkit-animation-iteration-count: infinite;
+  background-color: #FECD08;
+  border-radius: 10px;
+  border: none;
+  color: #fff;
+  opacity: .8;
+}
+
+.blue.button {
+  -webkit-animation-name: bluePulse;
+  -webkit-animation-duration: 4s;
+  -webkit-animation-iteration-count: infinite;
+  background-color: #34C2E3;
+  border-radius: 10px;
+  border: none;
+  color: #fff;
+  opacity: .8;
+}
+
+.gray.button {
+  -webkit-animation-name: grayPulse;
+  -webkit-animation-duration: 4s;
+  -webkit-animation-iteration-count: infinite;
+  background-color: #D8D8D8;
+  border-radius: 10px;
+  border: none;
+  color: #fff;
+  opacity: .8;
+}
+
+
+#play-btn{
+	width: 60px;
+	border-radius: 6px;
+
+}
+
+/*---------------phase-------------------*/
+.lineaxis path {
+	fill : none;
+	stroke: #000;
+}
+.lineaxis line {
+	stroke: #000;
+	stroke-width: .1em;
+}
+.lineaxis {
+	fill:#000;
+	font-size: .35em;
+}
+
+.phaselineHight {
+	fill: none;
+	stroke: #C1264D;
+	stroke-width:2;
+	stroke-opacity: 1;
+	shape-rendering: crispEdges;
+}
+.phaselines {
+	fill: none;
+	stroke: #FFF;
+	stroke-width: 2;
+	stroke-opacity: 0.5;
+	shape-rendering: crispEdges;
+}
+.linechartbg{
+	fill: none;
+	opacity: 0.5;
+	stroke: #fff;
+	stroke-width: 3;
+}
+.phaseMessage{
+	font-size: 1.5em;
+	fill: #C1264D;
+}
+
+#phase svg {
+	max-width: 100%;
+	max-height: 100%;
+}

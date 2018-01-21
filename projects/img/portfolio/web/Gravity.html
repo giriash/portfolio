@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<!-- saved from url=(0055)file:///Users/apple/Desktop/HTML/projects/gravity2.html -->
+<html lang="en" class=" js flexbox canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <title>Gravity</title>
+  <meta name="description" content="Gravity">
+  <meta name="keywords" content="Gravity, simplicity, theme, html5, single page, boxed portfolio">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="zhelin.land">
+  <link rel="icon" type="image/png" href="file:///Users/apple/Desktop/HTML/projects/img/icon.png">
+
+
+<!--Style-->
+
+  <link rel="stylesheet" href="./Gravity_files/reset.css">
+  <link rel="stylesheet" href="./Gravity_files/style.css">
+  <link rel="stylesheet" href="./Gravity_files/style-responsive.css">
+  <link rel="stylesheet" href="./Gravity_files/font-awesome.min.css">
+  
+  <!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  
+</head>
+
+<body>
+
+  <!--Header-->
+  <header id="fullscreen">
+      <div class="logo" id="full"><a class="ajax-link" href="file:///Users/apple/Desktop/HTML/projects/index.html">Zhe Lin</a></div>
+      <ul class="header-nav" id="sub-header">
+        <li><a href="file:///Users/apple/Desktop/HTML/projects/img/resume.pdf" class="nav-word">Resume</a></li>
+        <li><a href="mailto:zl485@cornell.edu" class="nav-word">Contact</a></li>
+    </ul>
+  </header>
+  <div class="clear"></div>
+  <!--Content-->
+
+  <div class="content" id="ajax-content">
+        <div class="project-intro"> 
+          <div class="text-intro">
+            <div class="project-title">
+              <h1>Gravity</h1>
+            </div>
+            <div class="two-column">
+              <p>
+                HTML5 ONLINE GAME
+                <br><br>PROGRAMMING LANGUAGE: JavaScript, HTML/CSS
+                <br><br>PROJRCT DESCRIPTION: <br>
+                Gravity is an online action game which has been released on kongregate.com
+                <br><br> <a href="http://www.kongregate.com/games/teresali/gravity?acomplete=gravity">click here to play</a> 
+                <br><br>TEAM MEMBERS: Andrew Aquino, John Asper, Ruchir Hajela, Teresa Li, Zizhou Wang
+            </p></div>   
+          </div>
+          <div class="one-column-img">
+              <img class="" src="./Gravity_files/bg.png">
+          </div>
+          <div class="clear"></div>             
+          
+        </div>
+        <div class="description">
+          <div class="text-intro">
+              <h2>Game Mechanics</h2>
+                  <h3>Coins</h3><br>
+                  <h6>Use coins and caverns to train and help user navigate and make decision.</h6>
+                  <h3>Flip Mechanic</h3><br>
+                  <h6>The main mechanic flip is controlled by “spacebar”.</h6>
+                  <div class="col-5 ">
+                    <h3>Dash Mechanic</h3><br>
+                    <br>
+                    <div class="col-5-imgContainer-left"><img class="gravity-img1" src="./Gravity_files/dash.gif"></div>
+                    <h6>When the bottom white bar is full, Use "right" direction key to dash.</h6>
+                  </div>
+                  <div class="col-5">
+                    <h3>Doors</h3>
+                    <br>
+                    <div class="col-5-imgContainer-right"><img class="gravity-img1" src="./Gravity_files/door.gif"></div>
+                  </div>
+          </div>
+          <div class="clear"></div>
+          <hr>
+          <div class="text-intro">
+              <h2>Level Design</h2>
+                  <h3>Level generate: based on “building blocks”:</h3>
+                  <h6>Level generate by building blocks: (By Andrew Aquino):
+                      To streamline our terrain generation in a manual fashion, we chose to create each level through ‘building blocks’. A level editor will generate a building block that consists of these attributes. </h6>
+                  <ul>
+                      <ol>1. A list of polygon structures.</ol>
+                      <ol>2. A list of center coordinates to initialize physics objects.</ol>
+                      <ol>3. An input type.</ol>
+                      <ol>4. An output type.</ol>
+                      <ol>5. Frequency/Weight (Rare ones get less weight)</ol>
+                  </ul>     
+                  <img class="one-column" id="img-left" src="./Gravity_files/buildingblock1.png">
+                  <img class="one-column" src="./Gravity_files/buildingblock2.png">
+                  <h6>The left figure shows the possible building blocks that could be made with dynamic physics. Moreover, it also shows how the token-style building blocks would fit together. The right building blocks shows more static environments.</h6>
+
+                  <h3>Level design overview:</h3>
+                  <img src="./Gravity_files/leveldesignoverview.png">
+          </div>
+          <hr>
+          <div>
+              <h2>Release</h2>
+                  <h3>Friend Release:</h3>
+                  <h4>burn down chart</h4>
+                  <p>Median Levels completed: 3. Median Time Played: 90 seconds. </p>
+                  <img src="./Gravity_files/fbdchart.png">
+                  <h4>Problem &amp; Improvement:</h4>
+                  <p>Random level generation is too hard at the beginning which discourage users from continuing to play. This is because our levels are randomly generated we weren’t able to complete as in-depth of analytics as we would’ve liked for this release.</p>
+                  <p>A gradual and rewarding in game complexity is needed to encourage users. Random level generation and “grammar” sequences need to be updated.</p>
+
+                  <h3>Newground Release:</h3>
+                  <h4>burn down chart</h4>
+                  <img src="./Gravity_files/newgroundlevel.png">
+                  <img src="./Gravity_files/newgroundtime.png">
+                  <h4>Death Count by Building blocks </h4>
+                  <img src="./Gravity_files/newgrounddeathcount.png">
+                  <h4>Problem &amp; Improvement:</h4>
+                  <ul>
+                      <ol>Preset building block sequences for levels</ol>
+                      <ol>Revamp the tutorial</ol>
+                      <ol>Filter building blocks based on analytics</ol>
+                      <ol>Develop current mechanics</ol>
+                  </ul>
+
+                  <h3>kongregated release:</h3>
+                  <h4>Level burn down chart</h4>
+                  <img src="./Gravity_files/kongregatelevel.png">
+                  <h4>Time burn down chart</h4>
+                  <img src="./Gravity_files/kongregatetime.png">
+                  <h4>Deaths Count by Building blocks</h4>
+                  <img src="./Gravity_files/kongregateblock.png">
+          </div>
+          <hr>
+          <div class="text-intro">
+              <h2>visual comcept</h2>
+                  <img src="./Gravity_files/v1.png">
+                  <img class="gravity-colorscheme" src="./Gravity_files/colorScheme6.png"><p>Color Scheme: </p><br><br><br>
+
+                  <img src="./Gravity_files/v2.png">
+                  <img class="gravity-colorscheme" src="./Gravity_files/colorScheme4.png">
+                  <p>Color Scheme: </p><br><br><br>
+
+                  <img src="./Gravity_files/v3.png">
+                  <img class="gravity-colorscheme" src="./Gravity_files/colorScheme5.png"><p>Color Scheme: </p><br><br><br>
+
+                  <img src="./Gravity_files/v4.png">
+                  <img class="gravity-colorscheme" src="./Gravity_files/colorScheme3.png"><p>Color Scheme: </p><br><br><br>
+
+
+                  <img src="./Gravity_files/v5.png"><img class="gravity-colorscheme" src="./Gravity_files/colorScheme2.png"><p>Color Scheme: </p><br><br><br>
+
+                  <img src="./Gravity_files/v6.png">
+                  <img class="gravity-colorscheme" src="./Gravity_files/colorScheme1.png"><p>Color Scheme: </p><br><br><br>
+
+                  <img src="./Gravity_files/v4.gif">
+                 <p>By Andrew Aquino. </p><br><br><br>
+          </div>
+        </div>
+       
+            
+        <div class="prev-next">
+              <div class="prev-button"><a class="ajax-link" href="file:///Users/apple/Desktop/HTML/projects/single.html">Previous work</a></div>
+              <div class="next-button"><a class="ajax-link" href="file:///Users/apple/Desktop/HTML/projects/projects.html">Next work</a></div>
+        </div>
+        
+    </div>
+
+
+
+  <!--Home Sidebar-->
+
+<div id="ajax-sidebar"></div>
+
+
+ <!--Footer-->
+
+  <footer>
+    <div class="footer-margin">
+      <div class="social-footer">
+        <a href="https://www.linkedin.com/in/zhe-lin-443850103"><i class="fa fa-linkedin"></i></a>
+        <a href="https://www.behance.net/daisyzhelin"><i class="fa fa-behance"></i></a>
+      </div>     
+       <div class="copyright">© Copyright 2015 Zhe Lin. All Rights Reserved.</div>
+    </div>
+  </footer>
+
+
+
+
+<!--Scripts-->
+
+  <script src="./Gravity_files/jquery.min.js"></script>
+  <script src="./Gravity_files/jquery.easing.min.js"></script>
+  <script src="./Gravity_files/modernizr.custom.42534.js" type="text/javascript"></script>
+  <script src="./Gravity_files/jquery.waitforimages.js" type="text/javascript"></script>
+  <script src="./Gravity_files/typed.js" type="text/javascript"></script>
+  <script src="./Gravity_files/masonry.pkgd.min.js" type="text/javascript"></script>  
+  <script src="./Gravity_files/imagesloaded.pkgd.min.js" type="text/javascript"></script>    
+  <script src="./Gravity_files/jquery.jkit.1.2.16.min.js"></script>
+  <script src="./Gravity_files/script.js" type="text/javascript"></script>
+  
+  <!-- <script>
+    $('#button, #buttons').on('click', function() {
+      $( ".opacity-nav" ).fadeToggle( "slow", "linear" );
+    // Animation complete.
+    });
+  </script> -->
+
+
+
+</body></html>
